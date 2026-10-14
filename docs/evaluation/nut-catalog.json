@@ -1,0 +1,228 @@
+{
+  "checked_at": "2026-10-11T13:42:39.617262+00:00",
+  "installation": {
+    "added_ingredients": 2,
+    "added_recipes": 6
+  },
+  "counts": {
+    "app_recipes": 184,
+    "app_ingredients": 49
+  },
+  "existing_records": {
+    "app_recipes": {
+      "count": 178,
+      "sha256": "da2bc019bcc4da15a94e7dfba0cdaa1391c3ea2f133ae90bdc4b787d85feb801",
+      "unchanged": true
+    },
+    "app_ingredients": {
+      "count": 47,
+      "sha256": "686c2a1644c6745472b66420f3937eb57acddb048ada83a83f149643618d58c5",
+      "unchanged": true
+    }
+  },
+  "repeated_install": {
+    "added_ingredients": 0,
+    "added_recipes": 0
+  },
+  "source_foods": [
+    {
+      "code": "05014",
+      "name_ja": "くるみ　いり",
+      "source": {
+        "code": "05014",
+        "name": "くるみ　いり",
+        "group": "05",
+        "index": 429,
+        "notes": "廃棄率： 殻つきの場合 55 %",
+        "excel_row": 441,
+        "excel_sheet": "表全体",
+        "energy_flags": {
+          "O": "*",
+          "R": ""
+        },
+        "errata_entries": [],
+        "pdf_references": [
+          {
+            "kind": "food_description",
+            "pdf_page": 123,
+            "printed_page": 299,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "energy_comparison",
+            "pdf_page": 364,
+            "printed_page": 540,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "name_index",
+            "pdf_page": 444,
+            "printed_page": 625,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "name_index",
+            "pdf_page": 450,
+            "printed_page": 631,
+            "verifies_nutrient_values": false
+          }
+        ],
+        "validation_status": "ready",
+        "pdf_energy_comparison": {
+          "pdf_page": 364,
+          "raw_kcal": "713",
+          "matches_excel": true
+        }
+      },
+      "price_per_100g": "260",
+      "allergens": [
+        "nuts"
+      ]
+    },
+    {
+      "code": "05040",
+      "name_ja": "アーモンド　いり　無塩",
+      "source": {
+        "code": "05040",
+        "name": "アーモンド　いり　無塩",
+        "group": "05",
+        "index": 416,
+        "notes": "",
+        "excel_row": 428,
+        "excel_sheet": "表全体",
+        "energy_flags": {
+          "O": "*",
+          "R": ""
+        },
+        "errata_entries": [],
+        "pdf_references": [
+          {
+            "kind": "other_context",
+            "pdf_page": 43,
+            "printed_page": null,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "food_description",
+            "pdf_page": 122,
+            "printed_page": 298,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "energy_comparison",
+            "pdf_page": 364,
+            "printed_page": 540,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "name_index",
+            "pdf_page": 442,
+            "printed_page": 623,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "name_index",
+            "pdf_page": 444,
+            "printed_page": 625,
+            "verifies_nutrient_values": false
+          },
+          {
+            "kind": "name_index",
+            "pdf_page": 468,
+            "printed_page": 649,
+            "verifies_nutrient_values": false
+          }
+        ],
+        "validation_status": "ready",
+        "pdf_energy_comparison": {
+          "pdf_page": 364,
+          "raw_kcal": "608",
+          "matches_excel": true
+        }
+      },
+      "price_per_100g": "240",
+      "allergens": [
+        "nuts"
+      ]
+    }
+  ],
+  "price_kind": "synthetic_demo_not_retail_price",
+  "validation": {
+    "tests_passed": 104,
+    "frontend_build": "passed",
+    "service_restart": "api and worker running",
+    "health": {
+      "status": "alive"
+    },
+    "browser": {
+      "search": "坚果",
+      "visible_recipes": 6,
+      "languages": [
+        "zh",
+        "en",
+        "ja"
+      ],
+      "screenshot": "screenshots/nut-breakfasts-zh.png"
+    }
+  },
+  "live_original_request_replay": {
+    "status": "ready",
+    "seconds": 2.71,
+    "budget_min_jpy": 1500,
+    "budget_jpy": 2000,
+    "cost_jpy": 1510.24,
+    "food_requirements": [
+      {
+        "meal": "any",
+        "food": "fish"
+      },
+      {
+        "meal": "breakfast",
+        "food": "nuts"
+      }
+    ],
+    "meals": [
+      {
+        "name": {
+          "en": "Walnut, strawberry & yogurt oats",
+          "ja": "くるみ・いちご・ヨーグルトのオーツ",
+          "zh": "核桃草莓酸奶燕麦碗"
+        },
+        "meal": "breakfast",
+        "cost_jpy": 449.4,
+        "allergens": [
+          "milk",
+          "nuts"
+        ]
+      },
+      {
+        "name": {
+          "en": "lentil, shiitake, komatsuna, brown rice plate",
+          "ja": "レンズ豆・しいたけ・小松菜・玄米ごはんプレート",
+          "zh": "扁豆·香菇·小松菜·糙米饭餐"
+        },
+        "meal": "lunch",
+        "cost_jpy": 297.28,
+        "allergens": [
+          "soy",
+          "wheat"
+        ]
+      },
+      {
+        "name": {
+          "en": "cod, cauliflower, corn, potato salad",
+          "ja": "たら・カリフラワー・コーン・じゃがいもサラダ",
+          "zh": "鳕鱼·菜花·玉米·土豆沙拉"
+        },
+        "meal": "dinner",
+        "cost_jpy": 763.56,
+        "allergens": [
+          "fish"
+        ]
+      }
+    ],
+    "independent_validation": true,
+    "history_modified": false,
+    "evidence_count": 2
+  }
+}

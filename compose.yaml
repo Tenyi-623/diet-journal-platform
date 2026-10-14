@@ -1,0 +1,20 @@
+name: hypertension-diet
+services:
+  db:
+    image: pgvector/pgvector:0.8.2-pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hypertension_diet
+      POSTGRES_USER: diet_app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - diet_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U diet_app -d hypertension_diet"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  diet_pgdata:

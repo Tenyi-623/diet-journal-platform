@@ -1,0 +1,67 @@
+{
+  "model_state": "warm; not a cold-start benchmark",
+  "scope": "small off-topic classification jobs; excludes RAG and long answers; sample too small for a reliable P95",
+  "groups": [
+    {
+      "concurrency": 1,
+      "observations": [
+        {
+          "seconds": 1.929,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        }
+      ],
+      "median_seconds": 1.929,
+      "maximum_seconds": 1.929
+    },
+    {
+      "concurrency": 2,
+      "observations": [
+        {
+          "seconds": 3.396,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        },
+        {
+          "seconds": 2.337,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        }
+      ],
+      "median_seconds": 3.396,
+      "maximum_seconds": 3.396
+    },
+    {
+      "concurrency": 5,
+      "observations": [
+        {
+          "seconds": 1.705,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        },
+        {
+          "seconds": 2.763,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        },
+        {
+          "seconds": 5.065,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        },
+        {
+          "seconds": 3.821,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        },
+        {
+          "seconds": 6.123,
+          "status": "out_of_scope",
+          "refusal_exact": true
+        }
+      ],
+      "median_seconds": 3.821,
+      "maximum_seconds": 6.123
+    }
+  ]
+}

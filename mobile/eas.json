@@ -1,0 +1,19 @@
+{
+  "cli": {
+    "version": ">= 16.28.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://192.168.1.86:8000",
+        "DIET_ANDROID_LAN_HTTP_PREVIEW": "true"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  }
+}

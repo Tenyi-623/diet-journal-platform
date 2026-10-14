@@ -1,0 +1,38 @@
+/home/aitd/hypertension-diet/backend/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_allergies_restrictions_and_unsupported (test_application.ApplicationTests.test_allergies_restrictions_and_unsupported) ... ok
+test_auth_csrf_registration (test_application.ApplicationTests.test_auth_csrf_registration) ... ok
+test_body_limits (test_application.ApplicationTests.test_body_limits) ... ok
+test_cancel_publish_and_expired_lease (test_application.ApplicationTests.test_cancel_publish_and_expired_lease) ... ok
+test_chat_refusal_exact_and_isolation (test_application.ApplicationTests.test_chat_refusal_exact_and_isolation) ... ok
+test_history_substitution_and_snapshot (test_application.ApplicationTests.test_history_substitution_and_snapshot) ... ok
+test_home_and_food_provenance (test_application.ApplicationTests.test_home_and_food_provenance) ... ok
+test_income_budget_and_target_independence (test_application.ApplicationTests.test_income_budget_and_target_independence) ... ok
+test_job_idempotency_and_isolation (test_application.ApplicationTests.test_job_idempotency_and_isolation) ... ok
+test_known_unsupported_profile_never_shows_examples (test_application.ApplicationTests.test_known_unsupported_profile_never_shows_examples) ... ok
+test_login_throttle (test_application.ApplicationTests.test_login_throttle) ... ok
+test_model_outputs_fail_closed (test_application.ApplicationTests.test_model_outputs_fail_closed) ... ok
+test_password_revokes_existing_sessions (test_application.ApplicationTests.test_password_revokes_existing_sessions) ... ok
+test_profile_isolation_and_version (test_application.ApplicationTests.test_profile_isolation_and_version) ... ok
+test_trace_and_hand_calculation (test_application.ApplicationTests.test_trace_and_hand_calculation) ... ok
+test_unknown_sodium_excludes_recipe (test_application.ApplicationTests.test_unknown_sodium_excludes_recipe) ... ok
+test_corrupted_unit_does_not_enter_retrieval (test_dri_repair.RepairTests.test_corrupted_unit_does_not_enter_retrieval) ... ok
+test_cover_is_restored_from_font_mapping (test_dri_repair.RepairTests.test_cover_is_restored_from_font_mapping) ... ok
+test_range_error_does_not_enter_retrieval (test_dri_repair.RepairTests.test_range_error_does_not_enter_retrieval) ... ok
+test_normalization_preserves_numbers_and_units (test_dri_repair.TextTests.test_normalization_preserves_numbers_and_units) ... ok
+test_estimate_and_footnote_survive (test_food_import.FoodValuesTest.test_estimate_and_footnote_survive) ... ok
+test_trace_and_missing_are_not_zero (test_food_import.FoodValuesTest.test_trace_and_missing_are_not_zero) ... ok
+test_unrecognized_fails_closed (test_food_import.FoodValuesTest.test_unrecognized_fails_closed) ... ok
+test_chunks_cover_text_without_gaps (test_knowledge.ChunkTests.test_chunks_cover_text_without_gaps) ... ok
+test_quarantined_source_never_eligible (test_knowledge.ChunkTests.test_quarantined_source_never_eligible) ... ok
+test_search_validation (test_knowledge.ChunkTests.test_search_validation) ... ok
+test_table_is_not_retrievable (test_knowledge.ChunkTests.test_table_is_not_retrievable) ... ok
+test_batch_count_rejected (test_knowledge.EmbeddingTests.test_batch_count_rejected) ... ok
+test_wrong_dimensions_rejected (test_knowledge.EmbeddingTests.test_wrong_dimensions_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 5.649s
+
+OK
+Seeded 19 ingredients, 20 recipes and 6 demonstration income policies; existing data unchanged.
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.

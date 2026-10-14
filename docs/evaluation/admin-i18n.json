@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-11",
+  "scope": [
+    "admin recipes",
+    "admin users",
+    "admin knowledge",
+    "recipe and ingredient labels",
+    "localized SVG captions"
+  ],
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "frontend_build": "passed",
+  "regression_tests": {
+    "passed": 61,
+    "seconds": 22.463
+  },
+  "translation_audit": {
+    "entries": 161,
+    "ui_literals_checked": 143,
+    "placeholder_checks": "passed",
+    "name_fallback_role_labels_upload_urls": "passed",
+    "english_singular_counts": "passed"
+  },
+  "browser": {
+    "english_recipe_name": "grilled chicken, asparagus, pumpkin, brown rice plate",
+    "japanese_recipe_name": "焼き鶏むね・アスパラガス・かぼちゃ・玄米ごはんプレート",
+    "english_editor_three_language_fields": true,
+    "ingredient_labels_english": true,
+    "images_en_ja_loaded": true,
+    "users_and_knowledge_headers_japanese": true,
+    "restored_language": "zh",
+    "console_errors": []
+  },
+  "screenshots": [
+    "docs/evaluation/screenshots/admin-recipes-en.jpg",
+    "docs/evaluation/screenshots/admin-recipes-ja.jpg"
+  ],
+  "data_changes": "No recipe records or uploaded images modified. Original-language knowledge documents preserved."
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-11",
+  "verification": "Read-only replay of reported job with real model and database; original messages and profile unchanged",
+  "question": "我想要价格高一点的，我想吃得好一点，一天的花销在1500日元-2000日元之间",
+  "previous_cost_jpy": 802.18,
+  "result": {
+    "status": "ready",
+    "message": "已按您要求的每日 ¥1500–¥2000 预算区间筛选三餐，测算总费用为 ¥1501.32，同时满足预算下限和上限。营养与费用明细见下方。",
+    "budget_min_jpy": 1500,
+    "budget_jpy": 2000,
+    "totals": {
+      "energy_kcal": 2000.072,
+      "protein_g": 130.372,
+      "fat_g": 51.08,
+      "carbs_g": 286.032,
+      "fiber_g": null,
+      "sodium_mg": null,
+      "potassium_mg": 5143.68,
+      "sodium_table_upper_mg": 794.114,
+      "salt_equivalent_table_upper_g": 2.0170495600000002,
+      "cost_jpy": 1501.32
+    }
+  },
+  "selected_recipes": [
+    {
+      "id": "r178-b004",
+      "scale": 0.8,
+      "cost_jpy": 172.4
+    },
+    {
+      "id": "r178-l025",
+      "scale": 1.4,
+      "cost_jpy": 715.96
+    },
+    {
+      "id": "r178-d048",
+      "scale": 1.2,
+      "cost_jpy": 612.96
+    }
+  ],
+  "checks": {
+    "tests_passed": 92,
+    "frontend_build": "passed",
+    "api_and_worker": "restarted and running",
+    "health_status": 200,
+    "openapi_snapshot": "updated"
+  }
+}

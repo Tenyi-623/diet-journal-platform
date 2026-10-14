@@ -1,0 +1,53 @@
+[
+  {
+    "filename": "高血圧管理・治療ガイドライン2025(1).pdf",
+    "title": "高血圧管理・治療ガイドライン2025 ～改訂ポイント～",
+    "publisher": "日本大学医学部／日大医誌・阿部雅紀",
+    "edition": "2025",
+    "source_kind": "guideline_commentary",
+    "warning": "5页改订要点解读文章，并非JSH2025指南全文；仅供候选依据检索，未经临床审核。",
+    "printed_page_start": 257,
+    "quarantine": false
+  },
+  {
+    "filename": "糖尿病診療ガイドライン2024.pdf",
+    "title": "糖尿病診療ガイドライン2024 第3章 食事療法",
+    "publisher": "日本糖尿病学会",
+    "edition": "2024",
+    "source_kind": "guideline_chapter",
+    "warning": "仅第3章（食事疗法），不是指南全文；未经临床审核。",
+    "printed_page_start": 37,
+    "quarantine": false
+  },
+  {
+    "filename": "日本食品標準成分表.pdf",
+    "title": "日本食品標準成分表2020年版（八訂）",
+    "publisher": "文部科学省 科学技術・学術審議会 資源調査分科会",
+    "edition": "2020（八訂）",
+    "source_kind": "food_composition_reference",
+    "warning": "2020版；只检索可提取的说明性文字，疑似表格及索引页隔离。不能用文本检索结果代替结构化营养计算。未经逐页人工审核。",
+    "printed_page_start": null,
+    "quarantine": false
+  },
+  {
+    "filename": "慢性腎臓病に対する食事療法基準.pdf",
+    "title": "慢性腎臓病に対する食事療法基準2007年版",
+    "publisher": "日本腎臓学会",
+    "edition": "2007",
+    "source_kind": "historical_guideline",
+    "warning": "页面图像确认2007版；文本层漏掉年份和部分数值。整份隔离，需可靠文本/OCR核对及更新版本后再启用。",
+    "printed_page_start": 871,
+    "quarantine": true
+  },
+  {
+    "filename": "「日本人の食事摂取基準(2025年版)」策定検討会報告書(1).pdf",
+    "title": "「日本人の食事摂取基準（2025年版）」策定検討会報告書",
+    "publisher": "厚生労働省",
+    "edition": "2025（厚生劳动省2025-03-25更正版）",
+    "source_kind": "dietary_reference_intakes",
+    "warning": "已进行400dpi日语OCR与可恢复字体映射修复；低置信度、复杂表格页及与可靠原文数字/单位不一致的行不参与检索。未逐页人工审核，数值与引用应核对原始页面。",
+    "printed_page_start": null,
+    "quarantine": false,
+    "repaired_pages": "data/repair/dri2025/repaired-pages.json"
+  }
+]

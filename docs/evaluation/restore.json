@@ -1,0 +1,26 @@
+{
+  "backup": "full-20261011T065818Z.dump",
+  "verification_database": "diet_verify_1791701943",
+  "tables": [
+    "foods",
+    "food_values",
+    "kb_chunks",
+    "app_users",
+    "app_recipes"
+  ],
+  "expected": [
+    2477,
+    133758,
+    1337,
+    50,
+    20
+  ],
+  "restored": [
+    2477,
+    133758,
+    1337,
+    50,
+    20
+  ],
+  "pass": true
+}

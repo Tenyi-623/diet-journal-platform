@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-11",
+  "feedback_version": "explanatory-outcomes-v1",
+  "tests": {
+    "full_suite": 78,
+    "full_suite_passed": true,
+    "post_change_feedback_and_menu_explanation_tests": 14,
+    "post_change_tests_passed": true
+  },
+  "frontend_build": "passed",
+  "runtime": "API and worker restarted; health HTTP 200",
+  "browser_checks": [
+    "Real model-backed off-topic request displays reason and next step",
+    "Real model-backed meal request names missing profile fields",
+    "Home page displays backend explanation"
+  ],
+  "live_results": [
+    {
+      "status": "needs_clarification",
+      "reason_code": "profile_incomplete",
+      "message": "生成个人菜单还缺少这些已确认信息：年龄、过敏情况、健康情况确认、页面底部的目标与模拟价格确认。缺少它们时，系统无法确定应使用的筛选条件。\n\n请在“用户信息”完成并保存这些项目，然后重新提交推荐请求。"
+    },
+    {
+      "status": "out_of_scope",
+      "reason_code": "outside_diet_scope",
+      "message": "这个问题包含当前饮食助手未覆盖的内容，现有知识库和处理流程无法可靠支持这部分回答。\n\n可以继续询问食材、营养、烹饪、饮食预算或菜单安排；若包含多个问题，请把饮食相关部分单独发来。"
+    }
+  ],
+  "screenshot": "docs/evaluation/screenshots/explanatory-feedback-zh.png",
+  "data_changes": "Two verification messages in a new admin conversation; no user profiles or historical messages changed."
+}

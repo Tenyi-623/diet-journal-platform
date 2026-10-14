@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-11",
+  "session_id": "ae383a31-9bfe-4507-b85c-23421e15acc6",
+  "job_id": "ee869aa1-a630-490d-92e0-4aa575a23e73",
+  "status": "ready",
+  "seconds": 3.05,
+  "meal_count": 3,
+  "recommendation_id": "260f9ad1-1c07-4181-a2a1-21b154e06d73",
+  "llm_num_batch": 64,
+  "tests_passed": 34,
+  "rag_status": "ready",
+  "rag_evidence_count": 2,
+  "history_last_status": "ready"
+}

@@ -1,0 +1,98 @@
+{
+  "added_ingredients": 28,
+  "added_recipes": 158,
+  "total_recipes": 178,
+  "ingredients": 47,
+  "meals": [
+    {
+      "meal": "breakfast",
+      "total": 48,
+      "enabled": 48
+    },
+    {
+      "meal": "dinner",
+      "total": 65,
+      "enabled": 65
+    },
+    {
+      "meal": "lunch",
+      "total": 65,
+      "enabled": 65
+    }
+  ],
+  "existing_recipes_preserved": true,
+  "original_recipe_sha256": "5f402ff3497ca836ce7b90e589a9545e9f29dcfae6fa1e5ab8c4f0fc75c9e730",
+  "backup": "data/backups/full-20261011T085237Z.dump",
+  "tests": {
+    "passed": 61,
+    "duration_seconds": 22.048,
+    "additional_home_vegetarian_check": "passed"
+  },
+  "live_planner_checks": [
+    {
+      "budget": 900,
+      "filters": {},
+      "seconds": 0.468,
+      "feasible": 217180,
+      "recipes": [
+        "b1",
+        "r178-l020",
+        "r178-d024"
+      ]
+    },
+    {
+      "budget": 2000,
+      "filters": {},
+      "seconds": 1.338,
+      "feasible": 6981430,
+      "recipes": [
+        "b6",
+        "r178-l042",
+        "r178-d051"
+      ]
+    },
+    {
+      "budget": 2000,
+      "filters": {
+        "diet": "vegetarian"
+      },
+      "seconds": 0.376,
+      "feasible": 1449573,
+      "recipes": [
+        "b6",
+        "r178-l042",
+        "r178-d051"
+      ]
+    },
+    {
+      "budget": 2000,
+      "filters": {
+        "allergens": [
+          "milk",
+          "soy",
+          "egg",
+          "fish",
+          "wheat"
+        ]
+      },
+      "seconds": 0.087,
+      "feasible": 40676,
+      "recipes": [
+        "r178-b011",
+        "r178-l020",
+        "r178-d036"
+      ]
+    }
+  ],
+  "catalog_version": "catalog-178-v1.1",
+  "browser_checks": {
+    "total": 178,
+    "search_chickpea": 16,
+    "last_page_recipes": 10,
+    "meal_filter": "lunch",
+    "recipe_id_search": "r178-l001",
+    "new_image_loaded": true,
+    "screenshot": "docs/evaluation/screenshots/catalog-178.jpg"
+  },
+  "frontend_build": "passed"
+}

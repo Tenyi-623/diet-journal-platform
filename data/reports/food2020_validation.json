@@ -1,0 +1,4109 @@
+{
+  "eligible_foods": 2477,
+  "quarantined_foods": [
+    "01210"
+  ],
+  "source": {
+    "edition": "2020（八訂）, workbook updated 2021-12-28",
+    "url": "https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+    "sha256": "ae54da2f99900300f9c9834947bb952690c3798d411b9ed5ba95711019410c4d",
+    "pdf_path": "/home/aitd/下载/日本食品標準成分表.pdf",
+    "pdf_sha256": "9f4a96440df37a33d498c67ce151861171653e02d811fd4ca85a4a719482ca05",
+    "errata_sha256": "938a07970b17ee446e88d4e16c64d65b67cd162e5573b27ce2281c644633b553",
+    "pdf_scope": "Official PDF omits chapter 2; references support identity/context, not all nutrient values."
+  },
+  "foods": 2478,
+  "fields": 54,
+  "values": 133812,
+  "group_sheet_rows_verified": 2478,
+  "pdf_energy_rows_parsed": 2478,
+  "pdf_energy_matches": 2338,
+  "pdf_energy_differences": [
+    {
+      "code": "01171",
+      "pdf_page": 352,
+      "raw_kcal": "136",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 16,
+          "item": "energy_kcal",
+          "after": "132",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "01210",
+      "pdf_page": 352,
+      "raw_kcal": "291",
+      "matches_excel": false,
+      "correction_evidence": []
+    },
+    {
+      "code": "01051",
+      "pdf_page": 353,
+      "raw_kcal": "132",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 39,
+          "item": "エネルギー　kcal",
+          "before": "132",
+          "after": "131",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "01144",
+      "pdf_page": 353,
+      "raw_kcal": "461",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 23,
+          "item": "energy_kcal",
+          "after": "453",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "01145",
+      "pdf_page": 353,
+      "raw_kcal": "337",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 25,
+          "item": "energy_kcal",
+          "after": "334",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "01060",
+      "pdf_page": 354,
+      "raw_kcal": "401",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 27,
+          "item": "energy_kcal",
+          "after": "418",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "01062",
+      "pdf_page": 354,
+      "raw_kcal": "439",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 29,
+          "item": "energy_kcal",
+          "after": "437",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "02070",
+      "pdf_page": 359,
+      "raw_kcal": "328",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 63,
+          "item": "エネルギー　kcal",
+          "before": "328",
+          "after": "327",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "03005",
+      "pdf_page": 360,
+      "raw_kcal": "393",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 66,
+          "item": "エネルギー　kcal",
+          "before": "393",
+          "after": "394",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "04002",
+      "pdf_page": 360,
+      "raw_kcal": "122",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 26,
+          "item": "energy_kcal",
+          "after": "124",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "05048",
+      "pdf_page": 364,
+      "raw_kcal": "121",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 86,
+          "item": "エネルギー　kcal",
+          "before": "121",
+          "after": "120",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "05032",
+      "pdf_page": 365,
+      "raw_kcal": "645",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 39,
+          "item": "energy_kcal",
+          "after": "681",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "05033",
+      "pdf_page": 365,
+      "raw_kcal": "668",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 41,
+          "item": "energy_kcal",
+          "after": "724",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "06093",
+      "pdf_page": 367,
+      "raw_kcal": "25",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 89,
+          "item": "エネルギー　kcal",
+          "before": "25",
+          "after": "24",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06104",
+      "pdf_page": 368,
+      "raw_kcal": "17",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 28,
+          "item": "energy_kcal",
+          "after": "15",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "06105",
+      "pdf_page": 368,
+      "raw_kcal": "47",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 97,
+          "item": "エネルギー　kcal",
+          "before": "47",
+          "after": "44",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06392",
+      "pdf_page": 373,
+      "raw_kcal": "35",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 119,
+          "item": "エネルギー　kcal",
+          "before": "35",
+          "after": "34",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06395",
+      "pdf_page": 373,
+      "raw_kcal": "57",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 126,
+          "item": "エネルギー　kcal",
+          "before": "57",
+          "after": "56",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06396",
+      "pdf_page": 373,
+      "raw_kcal": "84",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 129,
+          "item": "エネルギー　kcal",
+          "before": "84",
+          "after": "83",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06372",
+      "pdf_page": 374,
+      "raw_kcal": "27",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 97,
+          "item": "energy_kcal",
+          "after": "26",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "06306",
+      "pdf_page": 375,
+      "raw_kcal": "118",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 136,
+          "item": "エネルギー　kcal",
+          "before": "118",
+          "after": "117",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "06371",
+      "pdf_page": 375,
+      "raw_kcal": "68",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 141,
+          "item": "エネルギー　kcal",
+          "before": "68",
+          "after": "66",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "07006",
+      "pdf_page": 376,
+      "raw_kcal": "178",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 103,
+          "item": "energy_kcal",
+          "after": "176",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "07177",
+      "pdf_page": 379,
+      "raw_kcal": "75",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 131,
+          "item": "energy_kcal",
+          "after": "74",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "08016",
+      "pdf_page": 382,
+      "raw_kcal": "22",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 30,
+          "item": "energy_kcal",
+          "after": "26",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "08046",
+      "pdf_page": 382,
+      "raw_kcal": "66",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 32,
+          "item": "energy_kcal",
+          "after": "65",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "09011",
+      "pdf_page": 383,
+      "raw_kcal": "246",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 159,
+          "item": "energy_kcal",
+          "after": "247",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "09023",
+      "pdf_page": 383,
+      "raw_kcal": "152",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 167,
+          "item": "エネルギー　kcal",
+          "before": "152",
+          "after": "150",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "09045",
+      "pdf_page": 384,
+      "raw_kcal": "13",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 34,
+          "item": "energy_kcal",
+          "after": "16",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10014",
+      "pdf_page": 384,
+      "raw_kcal": "219",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 187,
+          "item": "energy_kcal",
+          "after": "223",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10017",
+      "pdf_page": 385,
+      "raw_kcal": "99",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 191,
+          "item": "energy_kcal",
+          "after": "102",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10040",
+      "pdf_page": 385,
+      "raw_kcal": "88",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 215,
+          "item": "energy_kcal",
+          "after": "90",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10445",
+      "pdf_page": 386,
+      "raw_kcal": "80",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 237,
+          "item": "energy_kcal",
+          "after": "84",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10069",
+      "pdf_page": 386,
+      "raw_kcal": "287",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 257,
+          "item": "energy_kcal",
+          "after": "300",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10073",
+      "pdf_page": 386,
+      "raw_kcal": "78",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 263,
+          "item": "energy_kcal",
+          "after": "79",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10078",
+      "pdf_page": 386,
+      "raw_kcal": "91",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 265,
+          "item": "energy_kcal",
+          "after": "93",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10446",
+      "pdf_page": 387,
+      "raw_kcal": "306",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 275,
+          "item": "energy_kcal",
+          "after": "309",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10095",
+      "pdf_page": 387,
+      "raw_kcal": "55",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 281,
+          "item": "energy_kcal",
+          "after": "58",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10112",
+      "pdf_page": 387,
+      "raw_kcal": "226",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 295,
+          "item": "energy_kcal",
+          "after": "241",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10184",
+      "pdf_page": 390,
+      "raw_kcal": "87",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 361,
+          "item": "energy_kcal",
+          "after": "89",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10185",
+      "pdf_page": 390,
+      "raw_kcal": "147",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 363,
+          "item": "energy_kcal",
+          "after": "153",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10216",
+      "pdf_page": 391,
+      "raw_kcal": "139",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 397,
+          "item": "energy_kcal",
+          "after": "145",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10234",
+      "pdf_page": 392,
+      "raw_kcal": "94",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 415,
+          "item": "energy_kcal",
+          "after": "96",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10251",
+      "pdf_page": 392,
+      "raw_kcal": "100",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 429,
+          "item": "energy_kcal",
+          "after": "103",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10266",
+      "pdf_page": 393,
+      "raw_kcal": "156",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 441,
+          "item": "energy_kcal",
+          "after": "161",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10275",
+      "pdf_page": 393,
+      "raw_kcal": "108",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 449,
+          "item": "energy_kcal",
+          "after": "110",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10294",
+      "pdf_page": 394,
+      "raw_kcal": "288",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 465,
+          "item": "energy_kcal",
+          "after": "294",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10318",
+      "pdf_page": 394,
+      "raw_kcal": "124",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 469,
+          "item": "energy_kcal",
+          "after": "131",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10324",
+      "pdf_page": 395,
+      "raw_kcal": "79",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 493,
+          "item": "energy_kcal",
+          "after": "82",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10325",
+      "pdf_page": 395,
+      "raw_kcal": "278",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 495,
+          "item": "energy_kcal",
+          "after": "286",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10326",
+      "pdf_page": 395,
+      "raw_kcal": "247",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 497,
+          "item": "energy_kcal",
+          "after": "252",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "10330",
+      "pdf_page": 395,
+      "raw_kcal": "207",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 499,
+          "item": "energy_kcal",
+          "after": "213",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11001",
+      "pdf_page": 397,
+      "raw_kcal": "244",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 561,
+          "item": "energy_kcal",
+          "after": "249",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11002",
+      "pdf_page": 397,
+      "raw_kcal": "283",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 563,
+          "item": "energy_kcal",
+          "after": "275",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11309",
+      "pdf_page": 398,
+      "raw_kcal": "309",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 36,
+          "item": "energy_kcal",
+          "after": "298",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11310",
+      "pdf_page": 398,
+      "raw_kcal": "298",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 201,
+          "item": "エネルギー　kcal",
+          "before": "298",
+          "after": "322",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "11031",
+      "pdf_page": 398,
+      "raw_kcal": "262",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 38,
+          "item": "energy_kcal",
+          "after": "193",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11281",
+      "pdf_page": 405,
+      "raw_kcal": "304",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 567,
+          "item": "energy_kcal",
+          "after": "305",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11200",
+      "pdf_page": 406,
+      "raw_kcal": "198",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 569,
+          "item": "energy_kcal",
+          "after": "205",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11201",
+      "pdf_page": 406,
+      "raw_kcal": "206",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 571,
+          "item": "energy_kcal",
+          "after": "214",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "11217",
+      "pdf_page": 406,
+      "raw_kcal": "105",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 573,
+          "item": "energy_kcal",
+          "after": "107",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "12011",
+      "pdf_page": 408,
+      "raw_kcal": "331",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 577,
+          "item": "energy_kcal",
+          "after": "330",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "13012",
+      "pdf_page": 409,
+      "raw_kcal": "134",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 583,
+          "item": "energy_kcal",
+          "after": "135",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15001",
+      "pdf_page": 411,
+      "raw_kcal": "284",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 603,
+          "item": "energy_kcal",
+          "after": "283",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15002",
+      "pdf_page": 411,
+      "raw_kcal": "287",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 605,
+          "item": "energy_kcal",
+          "after": "288",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15009",
+      "pdf_page": 412,
+      "raw_kcal": "310",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 607,
+          "item": "energy_kcal",
+          "after": "313",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15020",
+      "pdf_page": 412,
+      "raw_kcal": "347",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 611,
+          "item": "energy_kcal",
+          "after": "348",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15024",
+      "pdf_page": 413,
+      "raw_kcal": "287",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 613,
+          "item": "energy_kcal",
+          "after": "288",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 56,
+          "item": "energy_kcal",
+          "after": "288",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15032",
+      "pdf_page": 413,
+      "raw_kcal": "296",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 621,
+          "item": "energy_kcal",
+          "after": "299",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 158,
+          "item": "energy_kcal",
+          "after": "299",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15033",
+      "pdf_page": 413,
+      "raw_kcal": "257",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 625,
+          "item": "energy_kcal",
+          "after": "254",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 78,
+          "item": "energy_kcal",
+          "after": "254",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15046",
+      "pdf_page": 414,
+      "raw_kcal": "424",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 631,
+          "item": "energy_kcal",
+          "after": "423",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15049",
+      "pdf_page": 414,
+      "raw_kcal": "388",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 633,
+          "item": "energy_kcal",
+          "after": "390",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15053",
+      "pdf_page": 414,
+      "raw_kcal": "347",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 635,
+          "item": "energy_kcal",
+          "after": "348",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15056",
+      "pdf_page": 414,
+      "raw_kcal": "384",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 637,
+          "item": "energy_kcal",
+          "after": "385",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 82,
+          "item": "energy_kcal",
+          "after": "385",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15069",
+      "pdf_page": 415,
+      "raw_kcal": "253",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 641,
+          "item": "energy_kcal",
+          "after": "267",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 86,
+          "item": "energy_kcal",
+          "after": "267",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15126",
+      "pdf_page": 415,
+      "raw_kcal": "257",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 643,
+          "item": "energy_kcal",
+          "after": "256",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 90,
+          "item": "energy_kcal",
+          "after": "256",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15072",
+      "pdf_page": 415,
+      "raw_kcal": "321",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 651,
+          "item": "energy_kcal",
+          "after": "320",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 100,
+          "item": "energy_kcal",
+          "after": "320",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15073",
+      "pdf_page": 415,
+      "raw_kcal": "223",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 655,
+          "item": "energy_kcal",
+          "after": "211",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 106,
+          "item": "energy_kcal",
+          "after": "211",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15133",
+      "pdf_page": 415,
+      "raw_kcal": "248",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 657,
+          "item": "energy_kcal",
+          "after": "247",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 114,
+          "item": "energy_kcal",
+          "after": "247",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15135",
+      "pdf_page": 415,
+      "raw_kcal": "348",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 661,
+          "item": "energy_kcal",
+          "after": "349",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 118,
+          "item": "energy_kcal",
+          "after": "349",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15076",
+      "pdf_page": 415,
+      "raw_kcal": "457",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 321,
+          "item": "エネルギー　kcal",
+          "before": "407",
+          "after": "440",
+          "revision": "※２"
+        },
+        {
+          "sheet": "別添1",
+          "row": 663,
+          "item": "energy_kcal",
+          "after": "440",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 122,
+          "item": "energy_kcal",
+          "after": "440",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15173",
+      "pdf_page": 416,
+      "raw_kcal": "419",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 128,
+          "item": "energy_kcal",
+          "after": "417",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15078",
+      "pdf_page": 416,
+      "raw_kcal": "368",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表",
+          "row": 138,
+          "item": "energy_kcal",
+          "after": "367",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15177",
+      "pdf_page": 416,
+      "raw_kcal": "351",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 667,
+          "item": "energy_kcal",
+          "after": "353",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 164,
+          "item": "energy_kcal",
+          "after": "353",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15178",
+      "pdf_page": 416,
+      "raw_kcal": "352",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 669,
+          "item": "energy_kcal",
+          "after": "355",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 140,
+          "item": "energy_kcal",
+          "after": "355",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15179",
+      "pdf_page": 416,
+      "raw_kcal": "371",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 671,
+          "item": "energy_kcal",
+          "after": "375",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 142,
+          "item": "energy_kcal",
+          "after": "375",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15079",
+      "pdf_page": 416,
+      "raw_kcal": "386",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 673,
+          "item": "energy_kcal",
+          "after": "373",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15087",
+      "pdf_page": 416,
+      "raw_kcal": "79",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 683,
+          "item": "energy_kcal",
+          "after": "80",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15088",
+      "pdf_page": 416,
+      "raw_kcal": "44",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 685,
+          "item": "energy_kcal",
+          "after": "43",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15092",
+      "pdf_page": 416,
+      "raw_kcal": "438",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 689,
+          "item": "energy_kcal",
+          "after": "439",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15141",
+      "pdf_page": 416,
+      "raw_kcal": "495",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 691,
+          "item": "energy_kcal",
+          "after": "492",
+          "revision": "official_corrected_row"
+        },
+        {
+          "sheet": "本表",
+          "row": 152,
+          "item": "energy_kcal",
+          "after": "492",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15054",
+      "pdf_page": 417,
+      "raw_kcal": "514",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 699,
+          "item": "energy_kcal",
+          "after": "513",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15098",
+      "pdf_page": 417,
+      "raw_kcal": "511",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 701,
+          "item": "energy_kcal",
+          "after": "512",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15101",
+      "pdf_page": 417,
+      "raw_kcal": "476",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 705,
+          "item": "energy_kcal",
+          "after": "472",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "15116",
+      "pdf_page": 417,
+      "raw_kcal": "551",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 386,
+          "item": "エネルギー　kcal",
+          "before": "551",
+          "after": "550",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17001",
+      "pdf_page": 419,
+      "raw_kcal": "122",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 395,
+          "item": "エネルギー　kcal",
+          "before": "122",
+          "after": "117",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17002",
+      "pdf_page": 419,
+      "raw_kcal": "132",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 397,
+          "item": "エネルギー　kcal",
+          "before": "132",
+          "after": "129",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17003",
+      "pdf_page": 419,
+      "raw_kcal": "133",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 399,
+          "item": "エネルギー　kcal",
+          "before": "133",
+          "after": "130",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17085",
+      "pdf_page": 419,
+      "raw_kcal": "146",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 401,
+          "item": "エネルギー　kcal",
+          "before": "146",
+          "after": "144",
+          "revision": "※２"
+        },
+        {
+          "sheet": "別添1",
+          "row": 711,
+          "item": "energy_kcal",
+          "after": "144",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "17007",
+      "pdf_page": 419,
+      "raw_kcal": "77",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 403,
+          "item": "エネルギー　kcal",
+          "before": "77",
+          "after": "76",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17010",
+      "pdf_page": 420,
+      "raw_kcal": "102",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 413,
+          "item": "エネルギー　kcal",
+          "before": "102",
+          "after": "101",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17011",
+      "pdf_page": 420,
+      "raw_kcal": "87",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 415,
+          "item": "エネルギー　kcal",
+          "before": "87",
+          "after": "86",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17087",
+      "pdf_page": 420,
+      "raw_kcal": "40",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 417,
+          "item": "エネルギー　kcal",
+          "before": "40",
+          "after": "39",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17090",
+      "pdf_page": 420,
+      "raw_kcal": "66",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 423,
+          "item": "エネルギー　kcal",
+          "before": "66",
+          "after": "54",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17015",
+      "pdf_page": 420,
+      "raw_kcal": "37",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 425,
+          "item": "エネルギー　kcal",
+          "before": "37",
+          "after": "25",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17016",
+      "pdf_page": 420,
+      "raw_kcal": "59",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 427,
+          "item": "エネルギー　kcal",
+          "before": "59",
+          "after": "46",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17091",
+      "pdf_page": 420,
+      "raw_kcal": "116",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 429,
+          "item": "エネルギー　kcal",
+          "before": "116",
+          "after": "99",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17017",
+      "pdf_page": 420,
+      "raw_kcal": "36",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 431,
+          "item": "エネルギー　kcal",
+          "before": "36",
+          "after": "22",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17018",
+      "pdf_page": 420,
+      "raw_kcal": "41",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 433,
+          "item": "エネルギー　kcal",
+          "before": "41",
+          "after": "26",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17094",
+      "pdf_page": 421,
+      "raw_kcal": "125",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 438,
+          "item": "エネルギー　kcal",
+          "before": "125",
+          "after": "116",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17096",
+      "pdf_page": 421,
+      "raw_kcal": "222",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 715,
+          "item": "energy_kcal",
+          "after": "219",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "17097",
+      "pdf_page": 421,
+      "raw_kcal": "217",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 449,
+          "item": "エネルギー　kcal",
+          "before": "217",
+          "after": "212",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17098",
+      "pdf_page": 421,
+      "raw_kcal": "285",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 452,
+          "item": "エネルギー　kcal",
+          "before": "285",
+          "after": "282",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17099",
+      "pdf_page": 421,
+      "raw_kcal": "94",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 455,
+          "item": "エネルギー　kcal",
+          "before": "94",
+          "after": "85",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17100",
+      "pdf_page": 421,
+      "raw_kcal": "67",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 457,
+          "item": "エネルギー　kcal",
+          "before": "67",
+          "after": "59",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17101",
+      "pdf_page": 421,
+      "raw_kcal": "159",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 461,
+          "item": "エネルギー　kcal",
+          "before": "159",
+          "after": "150",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17102",
+      "pdf_page": 421,
+      "raw_kcal": "81",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 463,
+          "item": "エネルギー　kcal",
+          "before": "81",
+          "after": "70",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17103",
+      "pdf_page": 421,
+      "raw_kcal": "117",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 465,
+          "item": "エネルギー　kcal",
+          "before": "117",
+          "after": "107",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17104",
+      "pdf_page": 421,
+      "raw_kcal": "158",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 467,
+          "item": "エネルギー　kcal",
+          "before": "158",
+          "after": "153",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17108",
+      "pdf_page": 421,
+      "raw_kcal": "117",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 470,
+          "item": "エネルギー　kcal",
+          "before": "117",
+          "after": "114",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17137",
+      "pdf_page": 421,
+      "raw_kcal": "62",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 472,
+          "item": "エネルギー　kcal",
+          "before": "63",
+          "after": "59",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17111",
+      "pdf_page": 422,
+      "raw_kcal": "70",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 475,
+          "item": "エネルギー　kcal",
+          "before": "70",
+          "after": "66",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17144",
+      "pdf_page": 422,
+      "raw_kcal": "251",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 477,
+          "item": "エネルギー　kcal",
+          "before": "251",
+          "after": "248",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17112",
+      "pdf_page": 422,
+      "raw_kcal": "132",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 479,
+          "item": "エネルギー　kcal",
+          "before": "132",
+          "after": "131",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17113",
+      "pdf_page": 422,
+      "raw_kcal": "165",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 482,
+          "item": "エネルギー　kcal",
+          "before": "165",
+          "after": "164",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17036",
+      "pdf_page": 422,
+      "raw_kcal": "106",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 486,
+          "item": "エネルギー　kcal",
+          "before": "106",
+          "after": "104",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17042",
+      "pdf_page": 422,
+      "raw_kcal": "669",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 488,
+          "item": "エネルギー　kcal",
+          "before": "669",
+          "after": "668",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17043",
+      "pdf_page": 422,
+      "raw_kcal": "669",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 491,
+          "item": "エネルギー　kcal",
+          "before": "669",
+          "after": "668",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17118",
+      "pdf_page": 422,
+      "raw_kcal": "264",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 494,
+          "item": "エネルギー　kcal",
+          "before": "264",
+          "after": "262",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17040",
+      "pdf_page": 422,
+      "raw_kcal": "331",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 496,
+          "item": "エネルギー　kcal",
+          "before": "331",
+          "after": "325",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17116",
+      "pdf_page": 422,
+      "raw_kcal": "181",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 498,
+          "item": "エネルギー　kcal",
+          "before": "181",
+          "after": "179",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17117",
+      "pdf_page": 422,
+      "raw_kcal": "401",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 500,
+          "item": "エネルギー　kcal",
+          "before": "401",
+          "after": "399",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17041",
+      "pdf_page": 422,
+      "raw_kcal": "393",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 502,
+          "item": "エネルギー　kcal",
+          "before": "393",
+          "after": "392",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17120",
+      "pdf_page": 422,
+      "raw_kcal": "169",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 719,
+          "item": "energy_kcal",
+          "after": "167",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "17121",
+      "pdf_page": 423,
+      "raw_kcal": "219",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 504,
+          "item": "エネルギー　kcal",
+          "before": "219",
+          "after": "216",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17123",
+      "pdf_page": 423,
+      "raw_kcal": "214",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 506,
+          "item": "エネルギー　kcal",
+          "before": "214",
+          "after": "211",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17136",
+      "pdf_page": 423,
+      "raw_kcal": "126",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 509,
+          "item": "エネルギー　kcal",
+          "before": "126",
+          "after": "125",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "17127",
+      "pdf_page": 423,
+      "raw_kcal": "426",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 727,
+          "item": "energy_kcal",
+          "after": "428",
+          "revision": "official_corrected_row"
+        }
+      ]
+    },
+    {
+      "code": "17054",
+      "pdf_page": 423,
+      "raw_kcal": "226",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "本表第2章",
+          "row": 514,
+          "item": "エネルギー　kcal",
+          "before": "226",
+          "after": "225",
+          "revision": "※２"
+        }
+      ]
+    },
+    {
+      "code": "18015",
+      "pdf_page": 424,
+      "raw_kcal": "201",
+      "matches_excel": false,
+      "correction_evidence": [
+        {
+          "sheet": "別添1",
+          "row": 729,
+          "item": "energy_kcal",
+          "after": "199",
+          "revision": "official_corrected_row"
+        }
+      ]
+    }
+  ],
+  "statuses": {
+    "numeric": 111616,
+    "not_reported": 18334,
+    "trace": 3859,
+    "asterisk_unresolved": 3
+  },
+  "pilots": [
+    {
+      "code": "01088",
+      "group": "01",
+      "index": 131,
+      "name": "こめ　［水稲めし］　精白米　うるち米",
+      "excel_sheet": "表全体",
+      "excel_row": 143,
+      "notes": "精白米47 g相当量を含む\n食物繊維：AOAC2011.25法",
+      "energy_flags": {
+        "O": "*",
+        "R": ""
+      },
+      "nutrients": {
+        "REFUSE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC": {
+          "raw": "663",
+          "value": "663",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC_KCAL": {
+          "raw": "156",
+          "value": "156",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "WATER": {
+          "raw": "60.0",
+          "value": "60.0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROTCAA": {
+          "raw": "2.0",
+          "value": "2.0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROT-": {
+          "raw": "2.5",
+          "value": "2.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FATNLEA": {
+          "raw": "0.2",
+          "value": "0.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOLE": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "FAT-": {
+          "raw": "0.3",
+          "value": "0.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLM": {
+          "raw": "38.1",
+          "value": "38.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVL": {
+          "raw": "34.6",
+          "value": "34.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLDF-": {
+          "raw": "36.1",
+          "value": "36.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FIB-": {
+          "raw": "1.5",
+          "value": "1.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "POLYL": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOCDF-": {
+          "raw": "37.1",
+          "value": "37.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "OA": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "ASH": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NA": {
+          "raw": "1",
+          "value": "1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "K": {
+          "raw": "29",
+          "value": "29",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CA": {
+          "raw": "3",
+          "value": "3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MG": {
+          "raw": "7",
+          "value": "7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "P": {
+          "raw": "34",
+          "value": "34",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FE": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ZN": {
+          "raw": "0.6",
+          "value": "0.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CU": {
+          "raw": "0.10",
+          "value": "0.10",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MN": {
+          "raw": "0.35",
+          "value": "0.35",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ID": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "SE": {
+          "raw": "1",
+          "value": "1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CR": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MO": {
+          "raw": "30",
+          "value": "30",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RETOL": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "CARTA": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CRYPXB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTBEQ": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITA_RAE": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "VITD": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "TOCPHA": {
+          "raw": "Tr",
+          "value": null,
+          "status": "trace",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHB": {
+          "raw": "Tr",
+          "value": null,
+          "status": "trace",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHG": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHD": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITK": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "THIA": {
+          "raw": "0.02",
+          "value": "0.02",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RIBF": {
+          "raw": "0.01",
+          "value": "0.01",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NIA": {
+          "raw": "0.2",
+          "value": "0.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NE": {
+          "raw": "0.8",
+          "value": "0.8",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB6A": {
+          "raw": "0.02",
+          "value": "0.02",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB12": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "FOL": {
+          "raw": "3",
+          "value": "3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PANTAC": {
+          "raw": "0.25",
+          "value": "0.25",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "BIOT": {
+          "raw": "0.5",
+          "value": "0.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITC": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "ALC": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "NACL_EQ": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        }
+      },
+      "pdf_references": [
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "kind": "other_context",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 88,
+          "printed_page": 264,
+          "kind": "food_description",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 89,
+          "printed_page": 265,
+          "kind": "food_description",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 355,
+          "printed_page": 531,
+          "kind": "energy_comparison",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 445,
+          "printed_page": 626,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 452,
+          "printed_page": 633,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 454,
+          "printed_page": 635,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 455,
+          "printed_page": 636,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        }
+      ],
+      "pdf_energy_comparison": {
+        "pdf_page": 355,
+        "raw_kcal": "156",
+        "matches_excel": true
+      },
+      "errata_entries": [],
+      "validation_status": "ready"
+    },
+    {
+      "code": "06267",
+      "group": "06",
+      "index": 782,
+      "name": "ほうれんそう　葉　通年平均　生",
+      "excel_sheet": "表全体",
+      "excel_row": 792,
+      "notes": "廃棄部位： 株元\n硝酸イオン： 0.2 g",
+      "energy_flags": {
+        "O": "*",
+        "R": ""
+      },
+      "nutrients": {
+        "REFUSE": {
+          "raw": "10",
+          "value": "10",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC": {
+          "raw": "75",
+          "value": "75",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC_KCAL": {
+          "raw": "18",
+          "value": "18",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "WATER": {
+          "raw": "92.4",
+          "value": "92.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROTCAA": {
+          "raw": "1.7",
+          "value": "1.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROT-": {
+          "raw": "2.2",
+          "value": "2.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FATNLEA": {
+          "raw": "0.2",
+          "value": "0.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOLE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FAT-": {
+          "raw": "0.4",
+          "value": "0.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLM": {
+          "raw": "0.3",
+          "value": "0.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVL": {
+          "raw": "0.3",
+          "value": "0.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLDF-": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FIB-": {
+          "raw": "2.8",
+          "value": "2.8",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "POLYL": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOCDF-": {
+          "raw": "3.1",
+          "value": "3.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "OA": {
+          "raw": "0.9",
+          "value": "0.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ASH": {
+          "raw": "1.7",
+          "value": "1.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NA": {
+          "raw": "16",
+          "value": "16",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "K": {
+          "raw": "690",
+          "value": "690",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CA": {
+          "raw": "49",
+          "value": "49",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MG": {
+          "raw": "69",
+          "value": "69",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "P": {
+          "raw": "47",
+          "value": "47",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FE": {
+          "raw": "2.0",
+          "value": "2.0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ZN": {
+          "raw": "0.7",
+          "value": "0.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CU": {
+          "raw": "0.11",
+          "value": "0.11",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MN": {
+          "raw": "0.32",
+          "value": "0.32",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ID": {
+          "raw": "3",
+          "value": "3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "SE": {
+          "raw": "3",
+          "value": "3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CR": {
+          "raw": "2",
+          "value": "2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MO": {
+          "raw": "5",
+          "value": "5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RETOL": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "CARTA": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTB": {
+          "raw": "4200",
+          "value": "4200",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CRYPXB": {
+          "raw": "34",
+          "value": "34",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTBEQ": {
+          "raw": "4200",
+          "value": "4200",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITA_RAE": {
+          "raw": "350",
+          "value": "350",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITD": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "TOCPHA": {
+          "raw": "2.1",
+          "value": "2.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHG": {
+          "raw": "0.2",
+          "value": "0.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHD": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITK": {
+          "raw": "270",
+          "value": "270",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "THIA": {
+          "raw": "0.11",
+          "value": "0.11",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RIBF": {
+          "raw": "0.20",
+          "value": "0.20",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NIA": {
+          "raw": "0.6",
+          "value": "0.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NE": {
+          "raw": "1.3",
+          "value": "1.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB6A": {
+          "raw": "0.14",
+          "value": "0.14",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB12": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "FOL": {
+          "raw": "210",
+          "value": "210",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PANTAC": {
+          "raw": "0.20",
+          "value": "0.20",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "BIOT": {
+          "raw": "2.9",
+          "value": "2.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITC": {
+          "raw": "35",
+          "value": "35",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ALC": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "NACL_EQ": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        }
+      },
+      "pdf_references": [
+        {
+          "pdf_page": 161,
+          "printed_page": 337,
+          "kind": "food_description",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 374,
+          "printed_page": 550,
+          "kind": "energy_comparison",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 458,
+          "printed_page": 639,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 461,
+          "printed_page": 642,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 464,
+          "printed_page": 645,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 466,
+          "printed_page": 647,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        }
+      ],
+      "pdf_energy_comparison": {
+        "pdf_page": 374,
+        "raw_kcal": "18",
+        "matches_excel": true
+      },
+      "errata_entries": [],
+      "validation_status": "ready"
+    },
+    {
+      "code": "17007",
+      "group": "17",
+      "index": 2291,
+      "name": "＜調味料類＞　（しょうゆ類）　こいくちしょうゆ",
+      "excel_sheet": "表全体",
+      "excel_row": 2300,
+      "notes": "(100 g： 84.7 mL、100 mL： 118.1 g)",
+      "energy_flags": {
+        "O": "",
+        "R": "*"
+      },
+      "nutrients": {
+        "REFUSE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC": {
+          "raw": "323",
+          "value": "323",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC_KCAL": {
+          "raw": "76",
+          "value": "76",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "WATER": {
+          "raw": "67.1",
+          "value": "67.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROTCAA": {
+          "raw": "6.1",
+          "value": "6.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROT-": {
+          "raw": "7.7",
+          "value": "7.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FATNLEA": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOLE": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "FAT-": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLM": {
+          "raw": "1.6",
+          "value": "1.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVL": {
+          "raw": "1.6",
+          "value": "1.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLDF-": {
+          "raw": "8.6",
+          "value": "8.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FIB-": {
+          "raw": "(Tr)",
+          "value": null,
+          "status": "trace",
+          "estimated": true,
+          "footnote": null
+        },
+        "POLYL": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOCDF-": {
+          "raw": "7.9",
+          "value": "7.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "OA": {
+          "raw": "0.9",
+          "value": "0.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ASH": {
+          "raw": "15.1",
+          "value": "15.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NA": {
+          "raw": "5700",
+          "value": "5700",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "K": {
+          "raw": "390",
+          "value": "390",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CA": {
+          "raw": "29",
+          "value": "29",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MG": {
+          "raw": "65",
+          "value": "65",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "P": {
+          "raw": "160",
+          "value": "160",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FE": {
+          "raw": "1.7",
+          "value": "1.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ZN": {
+          "raw": "0.9",
+          "value": "0.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CU": {
+          "raw": "0.01",
+          "value": "0.01",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MN": {
+          "raw": "1.00",
+          "value": "1.00",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ID": {
+          "raw": "1",
+          "value": "1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "SE": {
+          "raw": "11",
+          "value": "11",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CR": {
+          "raw": "3",
+          "value": "3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MO": {
+          "raw": "48",
+          "value": "48",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RETOL": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTA": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CRYPXB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTBEQ": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITA_RAE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITD": {
+          "raw": "(0)",
+          "value": "0",
+          "status": "numeric",
+          "estimated": true,
+          "footnote": null
+        },
+        "TOCPHA": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHG": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHD": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITK": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "THIA": {
+          "raw": "0.05",
+          "value": "0.05",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RIBF": {
+          "raw": "0.17",
+          "value": "0.17",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NIA": {
+          "raw": "1.3",
+          "value": "1.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NE": {
+          "raw": "1.6",
+          "value": "1.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB6A": {
+          "raw": "0.17",
+          "value": "0.17",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB12": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FOL": {
+          "raw": "33",
+          "value": "33",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PANTAC": {
+          "raw": "0.48",
+          "value": "0.48",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "BIOT": {
+          "raw": "12.0",
+          "value": "12.0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITC": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ALC": {
+          "raw": "2.1",
+          "value": "2.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NACL_EQ": {
+          "raw": "14.5",
+          "value": "14.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        }
+      },
+      "pdf_references": [
+        {
+          "pdf_page": 324,
+          "printed_page": 500,
+          "kind": "food_description",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 419,
+          "printed_page": 595,
+          "kind": "energy_comparison",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 451,
+          "printed_page": 632,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 454,
+          "printed_page": 635,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 458,
+          "printed_page": 639,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        }
+      ],
+      "pdf_energy_comparison": {
+        "pdf_page": 419,
+        "raw_kcal": "77",
+        "matches_excel": false,
+        "correction_evidence": [
+          {
+            "sheet": "本表第2章",
+            "row": 403,
+            "item": "エネルギー　kcal",
+            "before": "77",
+            "after": "76",
+            "revision": "※２"
+          }
+        ]
+      },
+      "errata_entries": [
+        {
+          "sheet": "本表第2章",
+          "row": 402,
+          "item": "エネルギー　kJ",
+          "before": "326",
+          "after": "323",
+          "revision": "※２"
+        },
+        {
+          "sheet": "本表第2章",
+          "row": 403,
+          "item": "エネルギー　kcal",
+          "before": "77",
+          "after": "76",
+          "revision": "※２"
+        },
+        {
+          "sheet": "本表第2章",
+          "row": 404,
+          "item": "差引き法による利用炭水化物",
+          "before": "8.7*",
+          "after": "8.6*",
+          "revision": "※１"
+        },
+        {
+          "sheet": "本表第2章",
+          "row": 405,
+          "item": "備考欄",
+          "before": "食物繊維：AOAC2011.25法",
+          "after": "削除",
+          "revision": "※２"
+        }
+      ],
+      "validation_status": "ready"
+    },
+    {
+      "code": "01026",
+      "group": "01",
+      "index": 30,
+      "name": "こむぎ　［パン類］　角形食パン　食パン",
+      "excel_sheet": "表全体",
+      "excel_row": 42,
+      "notes": "食物繊維：AOAC2011.25法",
+      "energy_flags": {
+        "O": "*",
+        "R": ""
+      },
+      "nutrients": {
+        "REFUSE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC": {
+          "raw": "1050",
+          "value": "1050",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ENERC_KCAL": {
+          "raw": "248",
+          "value": "248",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "WATER": {
+          "raw": "39.2",
+          "value": "39.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROTCAA": {
+          "raw": "7.4",
+          "value": "7.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PROT-": {
+          "raw": "8.9",
+          "value": "8.9",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FATNLEA": {
+          "raw": "3.7",
+          "value": "3.7",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOLE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FAT-": {
+          "raw": "4.1",
+          "value": "4.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLM": {
+          "raw": "48.2",
+          "value": "48.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVL": {
+          "raw": "44.2",
+          "value": "44.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOAVLDF-": {
+          "raw": "44.1",
+          "value": "44.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FIB-": {
+          "raw": "4.2",
+          "value": "4.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "POLYL": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CHOCDF-": {
+          "raw": "46.4",
+          "value": "46.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "OA": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "ASH": {
+          "raw": "1.4",
+          "value": "1.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NA": {
+          "raw": "470",
+          "value": "470",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "K": {
+          "raw": "86",
+          "value": "86",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CA": {
+          "raw": "22",
+          "value": "22",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MG": {
+          "raw": "18",
+          "value": "18",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "P": {
+          "raw": "67",
+          "value": "67",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "FE": {
+          "raw": "0.5",
+          "value": "0.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ZN": {
+          "raw": "0.5",
+          "value": "0.5",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CU": {
+          "raw": "0.09",
+          "value": "0.09",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MN": {
+          "raw": "0.25",
+          "value": "0.25",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ID": {
+          "raw": "1",
+          "value": "1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "SE": {
+          "raw": "22",
+          "value": "22",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CR": {
+          "raw": "1",
+          "value": "1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "MO": {
+          "raw": "15",
+          "value": "15",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RETOL": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTA": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTB": {
+          "raw": "4",
+          "value": "4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CRYPXB": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "CARTBEQ": {
+          "raw": "4",
+          "value": "4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITA_RAE": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITD": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHA": {
+          "raw": "0.4",
+          "value": "0.4",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHB": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHG": {
+          "raw": "0.3",
+          "value": "0.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "TOCPHD": {
+          "raw": "0.1",
+          "value": "0.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITK": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "THIA": {
+          "raw": "0.07",
+          "value": "0.07",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "RIBF": {
+          "raw": "0.05",
+          "value": "0.05",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NIA": {
+          "raw": "1.1",
+          "value": "1.1",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "NE": {
+          "raw": "2.6",
+          "value": "2.6",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB6A": {
+          "raw": "0.03",
+          "value": "0.03",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITB12": {
+          "raw": "Tr",
+          "value": null,
+          "status": "trace",
+          "estimated": false,
+          "footnote": null
+        },
+        "FOL": {
+          "raw": "30",
+          "value": "30",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "PANTAC": {
+          "raw": "0.42",
+          "value": "0.42",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "BIOT": {
+          "raw": "2.3",
+          "value": "2.3",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "VITC": {
+          "raw": "0",
+          "value": "0",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        },
+        "ALC": {
+          "raw": "-",
+          "value": null,
+          "status": "not_reported",
+          "estimated": false,
+          "footnote": null
+        },
+        "NACL_EQ": {
+          "raw": "1.2",
+          "value": "1.2",
+          "status": "numeric",
+          "estimated": false,
+          "footnote": null
+        }
+      },
+      "pdf_references": [
+        {
+          "pdf_page": 77,
+          "printed_page": 253,
+          "kind": "food_description",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 352,
+          "printed_page": 528,
+          "kind": "energy_comparison",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 446,
+          "printed_page": 627,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 451,
+          "printed_page": 632,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 454,
+          "printed_page": 635,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        },
+        {
+          "pdf_page": 464,
+          "printed_page": 645,
+          "kind": "name_index",
+          "verifies_nutrient_values": false
+        }
+      ],
+      "pdf_energy_comparison": {
+        "pdf_page": 352,
+        "raw_kcal": "248",
+        "matches_excel": true
+      },
+      "errata_entries": [
+        {
+          "sheet": "本表第2章",
+          "row": 9,
+          "item": "エネルギー　kJ",
+          "before": "1051",
+          "after": "1050",
+          "revision": "※２"
+        }
+      ],
+      "validation_status": "ready"
+    }
+  ],
+  "validation": "passed_for_eligible_foods_with_quarantine"
+}

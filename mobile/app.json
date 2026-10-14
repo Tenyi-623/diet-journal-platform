@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "食日记",
+    "slug": "diet-journal-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "dietjournal",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "jp.aitd.dietjournal",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": false
+        }
+      }
+    },
+    "android": {
+      "package": "jp.aitd.dietjournal",
+      "allowBackup": false,
+      "adaptiveIcon": {
+        "backgroundColor": "#285A46",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F7F2"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "dietAndroidLanHttpPreview": false,
+      "router": {},
+      "eas": {
+        "projectId": "2ec463ca-56c6-4a16-9ae4-480ff9050cfc"
+      }
+    },
+    "owner": "zty623"
+  }
+}

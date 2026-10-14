@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-11",
+  "method": "Read-only replays with original request history/profile and real model; no user messages or profile modified",
+  "replays": [
+    {
+      "question": "帮我安排一日三餐，我想吃鱼，早上要含坚果，我的一日预算是2000日元",
+      "result": {
+        "status": "infeasible",
+        "reason_code": "required_food_unavailable",
+        "reason": "当前可用菜谱中，没有同时满足以下食材和餐次要求、且符合您档案限制的候选：早餐：坚果。因此暂时无法完成这份菜单。",
+        "next_steps": [
+          "可请管理员补充对应食材与菜谱，或明确调整这项食材/餐次要求。系统不会自行忽略要求，也不会放宽真实过敏限制。"
+        ],
+        "message": "当前可用菜谱中，没有同时满足以下食材和餐次要求、且符合您档案限制的候选：早餐：坚果。因此暂时无法完成这份菜单。\n\n可请管理员补充对应食材与菜谱，或明确调整这项食材/餐次要求。系统不会自行忽略要求，也不会放宽真实过敏限制。",
+        "budget_jpy": 2000,
+        "budget_min_jpy": null,
+        "food_requirements": [
+          {
+            "meal": "any",
+            "food": "fish"
+          },
+          {
+            "meal": "breakfast",
+            "food": "nuts"
+          }
+        ],
+        "unavailable_food_requirements": [
+          {
+            "meal": "breakfast",
+            "food": "nuts"
+          }
+        ],
+        "candidate_counts": {
+          "breakfast": 0,
+          "lunch": 232,
+          "dinner": 232
+        }
+      }
+    },
+    {
+      "question": "帮我安排一日三餐，我想吃鱼，早上要含坚果，我的一日预算是2000日元，请推荐一千五百日元至两千日元之间的三餐计划",
+      "result": {
+        "status": "infeasible",
+        "reason_code": "required_food_unavailable",
+        "reason": "当前可用菜谱中，没有同时满足以下食材和餐次要求、且符合您档案限制的候选：早餐：坚果。因此暂时无法完成这份菜单。",
+        "next_steps": [
+          "可请管理员补充对应食材与菜谱，或明确调整这项食材/餐次要求。系统不会自行忽略要求，也不会放宽真实过敏限制。"
+        ],
+        "message": "已识别您的每日预算区间：¥1500–¥2000。\n\n当前可用菜谱中，没有同时满足以下食材和餐次要求、且符合您档案限制的候选：早餐：坚果。因此暂时无法完成这份菜单。\n\n可请管理员补充对应食材与菜谱，或明确调整这项食材/餐次要求。系统不会自行忽略要求，也不会放宽真实过敏限制。",
+        "budget_jpy": 2000,
+        "budget_min_jpy": 1500,
+        "food_requirements": [
+          {
+            "meal": "any",
+            "food": "fish"
+          },
+          {
+            "meal": "breakfast",
+            "food": "nuts"
+          }
+        ],
+        "unavailable_food_requirements": [
+          {
+            "meal": "breakfast",
+            "food": "nuts"
+          }
+        ],
+        "candidate_counts": {
+          "breakfast": 0,
+          "lunch": 232,
+          "dinner": 232
+        }
+      }
+    }
+  ],
+  "checks": {
+    "tests_passed": 100,
+    "frontend_build": "passed",
+    "runtime": "API and worker restarted",
+    "health_http_status": 200,
+    "remaining_catalog_gap": "No nuts in the currently connected ingredient catalog; no breakfast recipe containing nuts. No new ingredients or recipes were added."
+  }
+}

@@ -1,0 +1,146 @@
+<mxfile host="65bd71144e">
+    <diagram id="deployment" name="01 部署架构">
+        <mxGraphModel dx="1867" dy="877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="1120" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="高血压个性化饮食推荐系统｜01 部署架构" vertex="1">
+                    <mxGeometry height="40" width="1000" x="220" y="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="browser" parent="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#E8F1FB;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;用户浏览器：运行React多语言界面&lt;/b&gt;&lt;br&gt;中文 / English / 日本語 · TypeScript + Material UI&lt;br&gt;登录 · 资料 · 血压 · 推荐 · 问答" vertex="1">
+                    <mxGeometry height="120" width="740" x="350" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="dgx" parent="1" style="swimlane;startSize=40;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#F3F7F3;strokeColor=#657986;strokeWidth=1.5;" value="NVIDIA DGX Spark｜128 GB内存 · 3.7 TB SSD｜Docker Compose" vertex="1">
+                    <mxGeometry height="800" width="1340" x="50" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="proxy" parent="dgx" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFF1CC;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;Caddy / Nginx：本地统一入口&lt;/b&gt;&lt;br&gt;提供Vite构建的网页文件 · 转发 /api 请求" vertex="1">
+                    <mxGeometry height="85" width="700" x="320" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="api" parent="dgx" style="swimlane;startSize=40;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#E4F1E3;strokeColor=#657986;strokeWidth=1.5;" value="FastAPI后端｜下列模块属于同一个后端应用" vertex="1">
+                    <mxGeometry height="300" width="1120" x="110" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth" parent="api" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;认证与用户资料&lt;/b&gt;&lt;br&gt;50个预创建账户 · 首选语言&lt;br&gt;年龄 / 病史 / 过敏 / 血压" vertex="1">
+                    <mxGeometry height="80" width="320" x="30" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="rules" parent="api" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;结构化推荐规则&lt;/b&gt;&lt;br&gt;BMI / 钠限制 / 过敏 / 病史&lt;br&gt;地区 / 日元预算" vertex="1">
+                    <mxGeometry height="80" width="320" x="400" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="lang" parent="api" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;多语言与RAG检索&lt;/b&gt;&lt;br&gt;语言选择 · 查询翻译 · 向量检索&lt;br&gt;结果融合去重 · 来源关联" vertex="1">
+                    <mxGeometry height="80" width="320" x="770" y="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow" parent="api" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;流程编排、模型调用与输出检查&lt;/b&gt;&lt;br&gt;候选食物 + 日语依据 → 生成 → 校验 → 保存推荐" vertex="1">
+                    <mxGeometry height="70" width="660" x="230" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="db" parent="dgx" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#E8F1FB;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;PostgreSQL + pgvector&lt;/b&gt;&lt;br&gt;用户 / 食物 / 日元价格 / 推荐历史&lt;br&gt;日语片段 / 来源页码 / halfvec(2560)&lt;br&gt;HNSW余弦索引" vertex="1">
+                    <mxGeometry height="120" width="380" x="50" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="emb" parent="dgx" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFF1CC;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;Qwen3-Embedding-4B&lt;/b&gt;&lt;br&gt;文本 → 2560维向量&lt;br&gt;在线查询与离线建库共用" vertex="1">
+                    <mxGeometry height="120" width="380" x="480" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="llm" parent="dgx" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FCE5DF;strokeColor=#657986;strokeWidth=1.5;" value="&lt;b&gt;Qwen语言模型服务&lt;/b&gt;&lt;br&gt;中英问题翻译为日语查询&lt;br&gt;按回答语言生成搭配与解释" vertex="1">
+                    <mxGeometry height="120" width="380" x="910" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="proxy_api" edge="1" parent="dgx" source="proxy" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;" target="api" value="/api 请求与响应">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="api_db" edge="1" parent="dgx" source="api" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.115;exitY=1;entryX=0.5;entryY=0;" target="db" value="数据读写与检索">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="api_emb" edge="1" parent="dgx" source="api" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="emb" value="文本 / 向量">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="api_llm" edge="1" parent="dgx" source="api" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.885;exitY=1;entryX=0.5;entryY=0;" target="llm" value="提示词 / 生成结果">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="browser_proxy" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;" target="proxy" value="仅本机或授权局域网 · 必须登录">
+                    <mxGeometry relative="1" x="-0.3043" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="note" parent="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;" value="数据库和模型仅内部访问。规则在FastAPI内实现；后端负责向量检索和引用核验。" vertex="1">
+                    <mxGeometry height="40" width="1340" x="50" y="1065" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="flows" name="02 在线与离线流程">
+        <mxGraphModel grid="1" page="1" pageWidth="1440" pageHeight="1120">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" value="02 数据流程｜日语知识库服务三语用户" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="220" y="15" width="1000" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="online" parent="1" value="在线推荐与问答｜由FastAPI编排，调用第1页的共享服务" vertex="1" style="swimlane;startSize=40;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#EDF4FA;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="40" y="85" width="1360" height="465" as="geometry"/>
+                </mxCell>
+                <mxCell id="s0" parent="online" value="&lt;b&gt;1. 登录与请求&lt;/b&gt;&lt;br&gt;中文 / 英文 / 日语&lt;br&gt;读取资料和回答语言" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="45" y="75" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" parent="online" value="&lt;b&gt;2. 候选食物筛选&lt;/b&gt;&lt;br&gt;结构化规则&lt;br&gt;病史 / 过敏 / 地区 / 预算" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="485" y="75" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" parent="online" value="&lt;b&gt;3. 检索查询准备&lt;/b&gt;&lt;br&gt;保留原问题；中英查询&lt;br&gt;由Qwen生成日语版本" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="925" y="75" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" parent="online" value="&lt;b&gt;4. 查询向量化&lt;/b&gt;&lt;br&gt;调用Embedding-4B&lt;br&gt;原问题及日语查询" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="925" y="265" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" parent="online" value="&lt;b&gt;5. 检索与融合&lt;/b&gt;&lt;br&gt;后端查询pgvector&lt;br&gt;合并去重，保留来源" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="485" y="265" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" parent="online" value="&lt;b&gt;6. 生成与校验&lt;/b&gt;&lt;br&gt;Qwen按指定语言回答&lt;br&gt;后端核验数值和引用" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FCE5DF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="45" y="265" width="390" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="sedge0" parent="online" source="s0" target="s1" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sedge1" parent="online" source="s1" target="s2" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sedge2" parent="online" source="s2" target="s3" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sedge3" parent="online" source="s3" target="s4" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sedge4" parent="online" source="s4" target="s5" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="online_note" parent="online" value="输出：三餐、份量、日元费用、推荐解释及日语原文/页码。回答语言由用户设置或本次选择确定。" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#EDF4FA;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="50" y="400" width="1250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="offline" parent="1" value="离线日语PDF建库｜资料导入时运行，使用同一Embedding模型和同一数据库" vertex="1" style="swimlane;startSize=40;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#F4F0F6;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="40" y="600" width="1360" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="o0" parent="offline" value="&lt;b&gt;日语PDF&lt;/b&gt;&lt;br&gt;提取文本&lt;br&gt;扫描件使用日语OCR" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="30" y="95" width="295" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="o1" parent="offline" value="&lt;b&gt;清理与审核&lt;/b&gt;&lt;br&gt;校正阅读顺序和表格&lt;br&gt;保留机构 / 版本 / 页码" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="365" y="95" width="295" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="oe1" parent="offline" source="o0" target="o1" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="o2" parent="offline" value="&lt;b&gt;语义分段与向量化&lt;/b&gt;&lt;br&gt;调用Qwen3-Embedding-4B&lt;br&gt;生成2560维向量" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="700" y="95" width="295" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="oe2" parent="offline" source="o1" target="o2" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="o3" parent="offline" value="&lt;b&gt;导入程序写入&lt;/b&gt;&lt;br&gt;日语原文 + 来源 + 向量&lt;br&gt;halfvec(2560) / HNSW" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#E8F1FB;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="1035" y="95" width="295" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="oe3" parent="offline" source="o2" target="o3" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;strokeColor=#526878;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="offnote" parent="offline" value="知识库保持日语原文；在线和离线使用一致的Embedding模型、版本和2560维配置。引用取自已保存元数据。" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#F4F0F6;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="40" y="265" width="1280" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" parent="1" value="实线：在线请求流程；虚线：离线导入流程。两页为同一系统的不同视图。&lt;br&gt;中英原文与日语查询的双路检索作为初步方案，需通过三语问题集评估效果。" vertex="1" style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fontSize=16;fontColor=#243342;fillColor=#FFFFFF;strokeColor=#657986;strokeWidth=1.5;">
+                    <mxGeometry x="40" y="995" width="1360" height="65" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

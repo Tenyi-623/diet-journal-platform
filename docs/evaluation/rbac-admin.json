@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-11",
+  "tests_passed": 54,
+  "test_database": "diet_restore_check",
+  "migration": "002_rbac_admin.sql",
+  "bootstrap_admin": "admin",
+  "existing_users_keep_regular_access": true,
+  "pre_migration_backup": "full-20261011T082443Z.dump",
+  "verified": [
+    "regular user 403",
+    "scoped role access",
+    "role changes revoke sessions",
+    "password resets revoke sessions",
+    "self-admin protection",
+    "recipe optimistic version check",
+    "immutable validated image upload",
+    "disabled documents excluded before retrieval",
+    "PDF queue and ingestion with stubbed embedding vectors",
+    "live admin login and all three management APIs",
+    "live runtime SQL permissions",
+    "browser admin menu, recipe/image form, knowledge list and page preview"
+  ],
+  "limits": {
+    "image_mb": 4,
+    "pdf_mb": 12,
+    "pdf_pages": 200,
+    "pdf_ocr": false
+  },
+  "screenshots": [
+    "screenshots/admin-recipes.jpg"
+  ]
+}

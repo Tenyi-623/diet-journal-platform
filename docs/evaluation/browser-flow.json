@@ -1,0 +1,13 @@
+{
+  "profileSave": true,
+  "personalized": true,
+  "chatPlan": true,
+  "reloadHistory": true,
+  "substitution": true,
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "errors": []
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "title": "高血圧管理・治療ガイドライン2025 ～改訂ポイント～",
+    "filename": "高血圧管理・治療ガイドライン2025(1).pdf",
+    "sha256": "aff097de1976ae68cd6ae041cbd54853a97610b8c31e5bb169b0a68601a92d9d",
+    "edition": "2025",
+    "source_kind": "guideline_commentary",
+    "warning": "5页改订要点解读文章，并非JSH2025指南全文；仅供候选依据检索，未经临床审核。",
+    "pages": 5,
+    "eligible_pages": 5,
+    "quarantined_pages": 0,
+    "planned_chunks": 11,
+    "quarantine_reasons": {}
+  },
+  {
+    "title": "糖尿病診療ガイドライン2024 第3章 食事療法",
+    "filename": "糖尿病診療ガイドライン2024.pdf",
+    "sha256": "c72dc9faecb82bd8fc7deda48546099f547d6606df7180212c72a1a22f33943d",
+    "edition": "2024",
+    "source_kind": "guideline_chapter",
+    "warning": "仅第3章（食事疗法），不是指南全文；未经临床审核。",
+    "pages": 30,
+    "eligible_pages": 30,
+    "quarantined_pages": 0,
+    "planned_chunks": 96,
+    "quarantine_reasons": {}
+  },
+  {
+    "title": "日本食品標準成分表2020年版（八訂）",
+    "filename": "日本食品標準成分表.pdf",
+    "sha256": "9f4a96440df37a33d498c67ce151861171653e02d811fd4ca85a4a719482ca05",
+    "edition": "2020（八訂）",
+    "source_kind": "food_composition_reference",
+    "warning": "2020版；只检索可提取的说明性文字，疑似表格及索引页隔离。不能用文本检索结果代替结构化营养计算。未经逐页人工审核。",
+    "pages": 471,
+    "eligible_pages": 293,
+    "quarantined_pages": 178,
+    "planned_chunks": 521,
+    "quarantine_reasons": {
+      "疑似成分表/调理表/索引页，待结构化提取与数值核对": 177,
+      "文字过少/封面/空白，未参与向量检索": 1
+    }
+  },
+  {
+    "title": "慢性腎臓病に対する食事療法基準2007年版",
+    "filename": "慢性腎臓病に対する食事療法基準.pdf",
+    "sha256": "b4db67ce85c1dee7371e6d6214e89894611d1e6d224c34390bc3e9516021ecee",
+    "edition": "2007",
+    "source_kind": "historical_guideline",
+    "warning": "页面图像确认2007版；文本层漏掉年份和部分数值。整份隔离，需可靠文本/OCR核对及更新版本后再启用。",
+    "pages": 8,
+    "eligible_pages": 0,
+    "quarantined_pages": 8,
+    "planned_chunks": 0,
+    "quarantine_reasons": {
+      "页面图像确认2007版；文本层漏掉年份和部分数值。整份隔离，需可靠文本/OCR核对及更新版本后再启用。": 8
+    }
+  },
+  {
+    "title": "「日本人の食事摂取基準（2025年版）」策定検討会報告書",
+    "filename": "「日本人の食事摂取基準(2025年版)」策定検討会報告書(1).pdf",
+    "sha256": "b921323b48153f0446f806f6cd236f3ae389ef4232d775120af725d7c7f60a29",
+    "edition": "2025（厚生劳动省2025-03-25更正版）",
+    "source_kind": "dietary_reference_intakes",
+    "warning": "已进行400dpi日语OCR与可恢复字体映射修复；低置信度、复杂表格页及与可靠原文数字/单位不一致的行不参与检索。未逐页人工审核，数值与引用应核对原始页面。",
+    "pages": 486,
+    "eligible_pages": 307,
+    "quarantined_pages": 179,
+    "planned_chunks": 709,
+    "quarantine_reasons": {
+      "封面/名录/目录等前置页，不参与正文检索": 12,
+      "复杂表格页，保留OCR结果，待表格结构与数值核对": 58,
+      "OCR置信度偏低，需逐页复核": 107,
+      "数值校验后可检索文字过少": 1,
+      "出版信息页，不参与正文检索": 1
+    }
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-11",
+  "verification": "Read-only replay of the reported job input; no chat history or profile modified",
+  "question": "我能不能吃鸡蛋",
+  "result": {
+    "status": "ready",
+    "message": "你当前的用户档案记录了以下过敏原：鸡蛋。本回答不能作为食用这些食材或含其成分食品的许可；请核对配料，并遵循医生为你制定的过敏管理方案。若档案填写有误，请先到“用户信息”核对更正。\n\n因此，对这次提到且与过敏记录重合的食材，当前不能建议你食用。判断依据是你填写的过敏记录，以及下方公开资料的过敏食物回避原则；营养价值不能替代过敏评估。",
+    "evidence": [
+      {
+        "chunk_id": "safety-nhs-food-allergy",
+        "source_type": "external_guidance",
+        "title": "NHS — Food allergy",
+        "publisher": "NHS",
+        "url": "https://www.nhs.uk/conditions/food-allergy/",
+        "checked_on": "2026-10-11",
+        "content": "NHS 建议避开引起过敏的食物及含相关成分的食品，仔细核对配料，并遵循专科医生制定的过敏管理方案。",
+        "warning": "补充的公开健康资料；不是知识库检索片段。个人过敏记录来自用户档案，未经本系统诊断。"
+      }
+    ],
+    "prompt_version": "diet-qa-v2-profile-aware",
+    "safety_basis": "saved_profile",
+    "matched_allergens": [
+      "egg"
+    ]
+  },
+  "unrelated_allergen_live_qa": {
+    "status": "ready",
+    "message": "你当前的用户档案记录了以下过敏原：牛奶。本回答不能作为食用这些食材或含其成分食品的许可；请核对配料，并遵循医生为你制定的过敏管理方案。若档案填写有误，请先到“用户信息”核对更正。\n\n鸡蛋中的碳水化合物含量相对于植物性食品而言非常微量。",
+    "evidence": [
+      {
+        "chunk_id": "safety-nhs-food-allergy",
+        "source_type": "external_guidance",
+        "title": "NHS — Food allergy",
+        "publisher": "NHS",
+        "url": "https://www.nhs.uk/conditions/food-allergy/",
+        "checked_on": "2026-10-11",
+        "content": "NHS 建议避开引起过敏的食物及含相关成分的食品，仔细核对配料，并遵循专科医生制定的过敏管理方案。",
+        "warning": "补充的公开健康资料；不是知识库检索片段。个人过敏记录来自用户档案，未经本系统诊断。"
+      },
+      {
+        "chunk_id": 472,
+        "document_id": 3,
+        "title": "日本食品標準成分表2020年版（八訂）",
+        "pdf_page": 269,
+        "printed_page": null,
+        "content": "12）卵類 \n \n 卵類の全般に通じる主な事項は、次のとおりである。 \n① ビタミン等の成分値は飼料に含まれる成分を反映するため、特殊な栄養成分を補強した卵類\nも市販されているが、本表では特殊な栄養強化飼料を給与していない通常の鳥卵の成分値を収\n載した。なお、分析値を得るために収集した市販鶏卵において、特殊な栄養強化飼料を給与し\nたと示されていないものであっても、従来の収載値と比較してビタミンEおよびD量が著しく\n高いものが見いだされた。これは、何らかの理由でビタミンEやDが強化された飼料の給与に\nより生産された鶏卵が通常卵として流通しているものと考えられる。収集した市販鶏卵のビタ\nミンEおよびD量を統計解析手法の一つである判別分析に供した結果、これら検体はビタミンE\nおよびD量が高いものと高くないものに明瞭に分類できた。この分類において、ビタミンEお\nよびD量が高くないものに分類された検体を通常卵とし、収載値はこれら通常卵の分析値に基\nづき決定した \n② 卵類に含まれる炭水化物の量は植物性食品に比べて微量であり、差引きによる値は不適当で\nある。そのため炭水化物の成分値は、原則として全糖の分析値に基づき決定した。 \n③ 卵類は、ビタミンDの他にビタミンD活性代謝物として25-ヒドロキシビタミンD（25-OH-D）\nを含む。「全卵」の「生」及び「ゆで」、「目玉焼き」、「いり」、「素揚げ」、「卵黄」の「生」及\nび「ゆで」は、これを考慮した。 \n④ 調理した食品は、「ゆで」、「蒸し」及び「焼き」を収載し、調理する前の食品（生）と同一\nの試料を用いて調理し、分析した。各食品の調理方法の概要を表12に示した。 \n⑤ 「分析値」、「文献値」、「類推値」、「計算値」、「借用値」、「推定値」等の用語については、第\n3章冒頭の「食品群全般に通じる事項」を参照されたい。 \n 以下、食品ごとに成分値に関する主な留意点について述べる。 \nあひる卵 \n－12020 ピータン \n 「ピータン」のほとんどは、中国及び台湾からの輸入品である。生卵の卵殻面に、食塩、紅茶\n浸出液、生石灰、木灰、天然ソーダ等の混合物を塗布するか、又はこれに生卵を浸漬して数か月\n間保蔵し、卵の内容物をアルカリで凝固させたものである。本来は、あひる卵から作られていた\nが、鶏卵を用いて製造する方法もある。",
+        "warning": "2020版；只检索可提取的说明性文字，疑似表格及索引页隔离。不能用文本检索结果代替结构化营养计算。未经逐页人工审核。",
+        "citation": "日本食品標準成分表2020年版（八訂） — PDF第269页",
+        "publisher": "文部科学省 科学技術・学術審議会 資源調査分科会",
+        "edition": "2020（八訂）",
+        "review_status": "machine_extracted_not_clinically_reviewed"
+      }
+    ],
+    "prompt_version": "diet-qa-v2-profile-aware",
+    "claims": [
+      {
+        "text": "鸡蛋中的碳水化合物含量相对于植物性食品而言非常微量。",
+        "citations": [
+          472
+        ]
+      }
+    ],
+    "note": "资料检索解释，未经临床审核；引用保留原文。",
+    "model": "qwen3.6:35b-a3b"
+  },
+  "checks": {
+    "tests": 70,
+    "tests_passed": true,
+    "frontend_build": "passed",
+    "api_and_worker": "restarted; running",
+    "api_health_http_status": 200,
+    "unauthenticated_chat": "303 to /login as expected",
+    "login_http_status": 200,
+    "existing_profile_and_chat_history": "unchanged"
+  }
+}

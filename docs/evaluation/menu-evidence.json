@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-11",
+  "job_id": "bd7d53e7-a165-4db5-b5f1-6bed7ff5e077",
+  "status": "ready",
+  "seconds": 9.11,
+  "meal_count": 3,
+  "recommendation_id": "c2be1ae2-8d89-46c3-bacd-fc94bd8ea301",
+  "tests_passed": 44,
+  "knowledge_status": "ready",
+  "claims": [
+    {
+      "text": "蛋白质应考虑与其他膳食因子的组合，均衡摄入。",
+      "meals": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "quote": "たんぱく質は、他の食事性因子との\n組合せも考えて、バランスよく摂取すべきである。",
+      "citation": 1218
+    }
+  ],
+  "sources": [
+    {
+      "chunk_id": 1218,
+      "title": "「日本人の食事摂取基準（2025年版）」策定検討会報告書",
+      "pdf_page": 423,
+      "printed_page": "411"
+    }
+  ],
+  "history_knowledge_status": "ready",
+  "browser_validation": {
+    "environment": "isolated diet_restore_check on port 8001, same frontend build",
+    "reasons_visible": true,
+    "citation_link_expands_source": true,
+    "ingredient_cells_expand": true,
+    "screenshot": "screenshots/menu-evidence.jpg"
+  }
+}

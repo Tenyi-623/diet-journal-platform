@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-11",
+  "method": "Read-only replay; existing profile and chat history unchanged",
+  "positive_replays": [
+    {
+      "question": "帮我安排一日三餐，我想吃鸡蛋",
+      "result": {
+        "status": "needs_clarification",
+        "reason_code": "requested_food_allergy_conflict",
+        "reason": "由于您对鸡蛋过敏，所以无法推荐鸡蛋相关的饮食。",
+        "next_steps": [
+          "可以为您安排不含鸡蛋的方案。您可以回复“安排不含鸡蛋的三餐”继续。"
+        ],
+        "message": "由于您对鸡蛋过敏，所以无法推荐鸡蛋相关的饮食。\n\n可以为您安排不含鸡蛋的方案。您可以回复“安排不含鸡蛋的三餐”继续。",
+        "safety_basis": "saved_profile",
+        "matched_allergens": [
+          "egg"
+        ],
+        "evidence": [
+          {
+            "chunk_id": "safety-nhs-food-allergy",
+            "source_type": "external_guidance",
+            "title": "NHS — Food allergy",
+            "publisher": "NHS",
+            "url": "https://www.nhs.uk/conditions/food-allergy/",
+            "checked_on": "2026-10-11",
+            "content": "NHS 建议避开引起过敏的食物及含相关成分的食品，仔细核对配料，并遵循专科医生制定的过敏管理方案。",
+            "warning": "补充的公开健康资料；不是知识库检索片段。个人过敏记录来自用户档案，未经本系统诊断。"
+          }
+        ]
+      }
+    },
+    {
+      "question": "我不是说了我想吃鸡蛋吗",
+      "result": {
+        "status": "needs_clarification",
+        "reason_code": "requested_food_allergy_conflict",
+        "reason": "由于您对鸡蛋过敏，所以无法推荐鸡蛋相关的饮食。",
+        "next_steps": [
+          "可以为您安排不含鸡蛋的方案。您可以回复“安排不含鸡蛋的三餐”继续。"
+        ],
+        "message": "由于您对鸡蛋过敏，所以无法推荐鸡蛋相关的饮食。\n\n可以为您安排不含鸡蛋的方案。您可以回复“安排不含鸡蛋的三餐”继续。",
+        "safety_basis": "saved_profile",
+        "matched_allergens": [
+          "egg"
+        ],
+        "evidence": [
+          {
+            "chunk_id": "safety-nhs-food-allergy",
+            "source_type": "external_guidance",
+            "title": "NHS — Food allergy",
+            "publisher": "NHS",
+            "url": "https://www.nhs.uk/conditions/food-allergy/",
+            "checked_on": "2026-10-11",
+            "content": "NHS 建议避开引起过敏的食物及含相关成分的食品，仔细核对配料，并遵循专科医生制定的过敏管理方案。",
+            "warning": "补充的公开健康资料；不是知识库检索片段。个人过敏记录来自用户档案，未经本系统诊断。"
+          }
+        ]
+      }
+    }
+  ],
+  "negative_intents": [
+    {
+      "message": "安排不含鸡蛋的三餐",
+      "intent": {
+        "domain": "diet",
+        "intent": "plan",
+        "budget": null,
+        "meal": null,
+        "new_health_or_allergy": false,
+        "needs_profile_update": false,
+        "exclude_food_codes": [
+          "12005"
+        ],
+        "requested_allergens": [],
+        "japanese_query": "卵を含まない献立3食を手配してください。"
+      }
+    },
+    {
+      "message": "不要牛奶，我想吃鸡蛋",
+      "intent": {
+        "domain": "diet",
+        "intent": "qa",
+        "budget": null,
+        "meal": null,
+        "new_health_or_allergy": false,
+        "needs_profile_update": false,
+        "exclude_food_codes": [],
+        "requested_allergens": [
+          "egg"
+        ],
+        "japanese_query": "牛乳は不要、卵を食べたい"
+      }
+    },
+    {
+      "message": "egg-free meals please",
+      "intent": {
+        "domain": "diet",
+        "intent": "plan",
+        "budget": null,
+        "meal": null,
+        "new_health_or_allergy": false,
+        "needs_profile_update": false,
+        "exclude_food_codes": [],
+        "requested_allergens": [],
+        "japanese_query": "卵抜きのご飯をお願いします"
+      }
+    },
+    {
+      "message": "卵抜きの献立をお願いします",
+      "intent": {
+        "domain": "diet",
+        "intent": "plan",
+        "budget": null,
+        "meal": null,
+        "new_health_or_allergy": false,
+        "needs_profile_update": false,
+        "exclude_food_codes": [
+          "12005"
+        ],
+        "requested_allergens": [],
+        "japanese_query": "卵抜きの献立をお願いします。"
+      }
+    }
+  ],
+  "verification": {
+    "tests_passed": 81,
+    "api_and_worker": "restarted and running",
+    "health_http": 200,
+    "frontend": "unchanged; existing response renderer shows the new message"
+  }
+}

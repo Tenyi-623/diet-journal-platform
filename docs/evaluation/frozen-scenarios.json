@@ -1,0 +1,348 @@
+{
+  "version": "demo-acceptance-v1",
+  "frozen_before_execution": true,
+  "planner": [
+    {
+      "id": "income-1",
+      "profile": {
+        "income_band": "JPY_A1"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "income-2",
+      "profile": {
+        "income_band": "JPY_A2"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "income-3",
+      "profile": {
+        "income_band": "JPY_A3"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "income-4",
+      "profile": {
+        "income_band": "JPY_A4"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "income-5",
+      "profile": {
+        "income_band": "JPY_A5"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "income-6",
+      "profile": {
+        "income_band": "JPY_A6"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "explicit-budget",
+      "profile": {
+        "daily_budget": 1300
+      },
+      "budget": 1000,
+      "expected": "ready"
+    },
+    {
+      "id": "low-budget",
+      "profile": {},
+      "budget": 100,
+      "expected": "infeasible"
+    },
+    {
+      "id": "vegetarian",
+      "profile": {
+        "diet": "vegetarian"
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "milk-allergy",
+      "profile": {
+        "allergy_status": "present",
+        "allergens": [
+          "milk"
+        ]
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "fish-allergy",
+      "profile": {
+        "allergy_status": "present",
+        "allergens": [
+          "fish"
+        ]
+      },
+      "expected": "ready"
+    },
+    {
+      "id": "no-allergen-compatible",
+      "profile": {
+        "allergy_status": "present",
+        "allergens": [
+          "milk",
+          "egg",
+          "soy",
+          "wheat",
+          "fish"
+        ],
+        "daily_budget": 2000
+      },
+      "expected": "infeasible"
+    },
+    {
+      "id": "unknown-allergy",
+      "profile": {
+        "allergy_status": "unknown"
+      },
+      "expected": "needs_clarification"
+    },
+    {
+      "id": "missing-budget",
+      "profile": {
+        "income_band": null
+      },
+      "expected": "needs_clarification"
+    },
+    {
+      "id": "unconfirmed",
+      "profile": {
+        "health_confirmed": false
+      },
+      "expected": "needs_clarification"
+    },
+    {
+      "id": "minor",
+      "profile": {
+        "age": 16
+      },
+      "expected": "unsupported"
+    },
+    {
+      "id": "kidney",
+      "profile": {
+        "conditions": [
+          "kidney"
+        ]
+      },
+      "expected": "unsupported"
+    },
+    {
+      "id": "diabetes",
+      "profile": {
+        "conditions": [
+          "diabetes"
+        ]
+      },
+      "expected": "unsupported"
+    },
+    {
+      "id": "pregnancy",
+      "profile": {
+        "conditions": [
+          "pregnancy"
+        ]
+      },
+      "expected": "unsupported"
+    },
+    {
+      "id": "time-limit",
+      "profile": {
+        "cooking_minutes": 10
+      },
+      "expected": "infeasible"
+    }
+  ],
+  "classification": [
+    {
+      "id": "zh-off_topic-1",
+      "language": "zh",
+      "input": "告诉我今天的天气",
+      "domain": "off_topic"
+    },
+    {
+      "id": "zh-off_topic-2",
+      "language": "zh",
+      "input": "帮我写一封求职信",
+      "domain": "off_topic"
+    },
+    {
+      "id": "zh-off_topic-3",
+      "language": "zh",
+      "input": "哪支股票值得买",
+      "domain": "off_topic"
+    },
+    {
+      "id": "zh-off_topic-4",
+      "language": "zh",
+      "input": "解这道几何题",
+      "domain": "off_topic"
+    },
+    {
+      "id": "zh-off_topic-5",
+      "language": "zh",
+      "input": "推荐午餐并预测足球比赛结果",
+      "domain": "off_topic"
+    },
+    {
+      "id": "zh-diet-1",
+      "language": "zh",
+      "input": "1000日元能安排一天的饭吗",
+      "domain": "diet"
+    },
+    {
+      "id": "zh-diet-2",
+      "language": "zh",
+      "input": "我想了解燕麦的营养",
+      "domain": "diet"
+    },
+    {
+      "id": "zh-diet-3",
+      "language": "zh",
+      "input": "请推荐不含鸡蛋的三餐",
+      "domain": "diet"
+    },
+    {
+      "id": "zh-diet-4",
+      "language": "zh",
+      "input": "怎么理解食品标签的钠含量",
+      "domain": "diet"
+    },
+    {
+      "id": "zh-diet-5",
+      "language": "zh",
+      "input": "我的饮食预算改成1200日元",
+      "domain": "diet"
+    },
+    {
+      "id": "en-off_topic-1",
+      "language": "en",
+      "input": "Who won the football match?",
+      "domain": "off_topic"
+    },
+    {
+      "id": "en-off_topic-2",
+      "language": "en",
+      "input": "Translate my employment contract",
+      "domain": "off_topic"
+    },
+    {
+      "id": "en-off_topic-3",
+      "language": "en",
+      "input": "Explain quantum computing",
+      "domain": "off_topic"
+    },
+    {
+      "id": "en-off_topic-4",
+      "language": "en",
+      "input": "Suggest a video game",
+      "domain": "off_topic"
+    },
+    {
+      "id": "en-off_topic-5",
+      "language": "en",
+      "input": "Plan breakfast and write malware",
+      "domain": "off_topic"
+    },
+    {
+      "id": "en-diet-1",
+      "language": "en",
+      "input": "Create a daily meal plan for 1100 yen",
+      "domain": "diet"
+    },
+    {
+      "id": "en-diet-2",
+      "language": "en",
+      "input": "What nutrients does tofu contain?",
+      "domain": "diet"
+    },
+    {
+      "id": "en-diet-3",
+      "language": "en",
+      "input": "I do not want chicken in my meals",
+      "domain": "diet"
+    },
+    {
+      "id": "en-diet-4",
+      "language": "en",
+      "input": "Explain sodium on a food label",
+      "domain": "diet"
+    },
+    {
+      "id": "en-diet-5",
+      "language": "en",
+      "input": "My daily food budget is 1400 yen",
+      "domain": "diet"
+    },
+    {
+      "id": "ja-off_topic-1",
+      "language": "ja",
+      "input": "面白い小説を紹介して",
+      "domain": "off_topic"
+    },
+    {
+      "id": "ja-off_topic-2",
+      "language": "ja",
+      "input": "旅行のホテルを予約して",
+      "domain": "off_topic"
+    },
+    {
+      "id": "ja-off_topic-3",
+      "language": "ja",
+      "input": "選挙の結果を教えて",
+      "domain": "off_topic"
+    },
+    {
+      "id": "ja-off_topic-4",
+      "language": "ja",
+      "input": "プログラムのエラーを直して",
+      "domain": "off_topic"
+    },
+    {
+      "id": "ja-off_topic-5",
+      "language": "ja",
+      "input": "夕食を提案して、それから株を推薦して",
+      "domain": "off_topic"
+    },
+    {
+      "id": "ja-diet-1",
+      "language": "ja",
+      "input": "一日1000円以内の献立がほしい",
+      "domain": "diet"
+    },
+    {
+      "id": "ja-diet-2",
+      "language": "ja",
+      "input": "牛乳の栄養について教えて",
+      "domain": "diet"
+    },
+    {
+      "id": "ja-diet-3",
+      "language": "ja",
+      "input": "魚を使わない三食を提案して",
+      "domain": "diet"
+    },
+    {
+      "id": "ja-diet-4",
+      "language": "ja",
+      "input": "食品表示のナトリウムとは何ですか",
+      "domain": "diet"
+    },
+    {
+      "id": "ja-diet-5",
+      "language": "ja",
+      "input": "一日の食費は1200円にしたい",
+      "domain": "diet"
+    }
+  ]
+}

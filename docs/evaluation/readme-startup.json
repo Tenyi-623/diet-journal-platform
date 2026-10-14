@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "host": "spark-af23",
+  "documentation": [
+    "README.md",
+    "backend/README.md",
+    "docs/RUNBOOK.zh-CN.md"
+  ],
+  "checks": {
+    "bash_blocks_syntax": 35,
+    "embedded_python_syntax": "passed",
+    "local_document_links": "passed",
+    "private_values_not_embedded": "passed",
+    "api_health": "alive",
+    "database_read": "passed",
+    "ollama_version": "0.40.0",
+    "generation_probe": {
+      "status": "ok"
+    },
+    "embedding_dimension": 2560
+  },
+  "not_executed": [
+    "host reboot or shutdown",
+    "Docker start/restart/update requiring operator sudo",
+    "backup restore or dependency reinstallation"
+  ],
+  "docker_container_name": "Operator must confirm with sudo docker ps -a; current user cannot access Docker socket."
+}

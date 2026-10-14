@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-11",
+  "web_listen": "0.0.0.0:8000",
+  "local_network_observed": {
+    "interface": "wlP9s9",
+    "address": "192.168.11.39",
+    "subnet": "192.168.11.0/24",
+    "url": "http://192.168.11.39:8000/chat"
+  },
+  "services": {
+    "api": "running",
+    "worker": "running",
+    "postgres_listen": "127.0.0.1:5433",
+    "ollama_listen": "127.0.0.1:11434"
+  },
+  "verification": {
+    "source": "Spark itself, connecting to its physical LAN IP",
+    "health": 200,
+    "unauthenticated_account": 401,
+    "login_with_matching_origin": 200,
+    "authenticated_chat_page": 200,
+    "authenticated_account": 200,
+    "admin_recipes": 200,
+    "cross_origin_logout": 403,
+    "matching_origin_logout": 200,
+    "verification_session_removed": true,
+    "integration_tests_passed": 105,
+    "integration_test_seconds": 40.198,
+    "simulated_origin_addresses": [
+      "http://192.168.11.39:8000",
+      "http://10.20.30.40:8000"
+    ],
+    "other_physical_device_tested": false
+  },
+  "firewall": {
+    "ufw_config": "ENABLED=no",
+    "privileged_runtime_rules_read": false,
+    "reason": "sudo requires the local system password",
+    "rules_changed": false
+  },
+  "limitations": [
+    "Other devices must be able to reach Spark through their network and firewall.",
+    "HTTP transport; HTTPS has not been configured.",
+    "The native API and worker still require scripts.service start after a Spark reboot."
+  ]
+}
