@@ -9,14 +9,17 @@ export function RecipeArtwork({ recipeId, language = "zh" }: { recipeId: string;
   const { api } = useSession();
   const [artwork, setArtwork] = useState<{ key: string; xml: string } | null>(null);
   const imageKey = `${recipeId}:${language}`;
+  const imageId = recipeId.startsWith("/api/recipe-images/")
+    ? recipeId.slice("/api/recipe-images/".length)
+    : recipeId;
 
   useEffect(() => {
     let current = true;
-    void api.text(`/recipe-images/${encodeURIComponent(recipeId)}?lang=${language}`)
+    void api.text(`/recipe-images/${encodeURIComponent(imageId)}?lang=${encodeURIComponent(language)}`)
       .then((value) => { if (current && value.includes("<svg")) setArtwork({ key: imageKey, xml: value }); })
       .catch(() => undefined);
     return () => { current = false; };
-  }, [api, imageKey, language, recipeId]);
+  }, [api, imageId, imageKey, language]);
 
   const xml = artwork?.key === imageKey ? artwork.xml : null;
 
