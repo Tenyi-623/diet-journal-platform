@@ -23,7 +23,7 @@
 - 项目采用 Expo Continuous Native Generation（CNG）。`mobile/ios/` 和 `mobile/android/` 被忽略，由 Expo 本机生成。初期请继续维护 `app.json`、配置插件和 JS/TS 源码，不要把生成目录提交，也不要直接在生成目录里做长期修改。若确实需要原生 Swift 工程长期维护，先向用户说明 CNG 与提交原生目录的维护取舍，再调整架构。
 - `mobile/eas.json` 目前只有 Android 内部 `preview` APK 配置，没有 iOS EAS 构建配置；本任务优先验证 Mac 本地 Xcode 模拟器/设备流程，不要假设已有 TestFlight 构建能力。
 - 当前 API 客户端默认要求 HTTPS。临时局域网 HTTP 开关只覆盖 Android 预览；`mobile/app.json` 的 iOS ATS 当前禁止任意明文请求。因此 iOS 目前不能直接使用 Android 的 HTTP 演示配置。
-- `mobile/eas.json` 中现存的演示 API 地址是 `http://192.168.1.86:8000`，这只是旧配置值。开发前必须验证 Mac 当前网络下该地址是否仍是正确且可达的服务地址，不能把它当作已保证在线的地址。
+- `mobile/eas.json` 中现存的演示 API 地址只是旧配置值。开发前必须验证 Mac 当前网络下配置地址是否仍是正确且可达的服务地址，不能把它当作已保证在线的地址。
 - 移动端 README 记录后端 API 当前停止。服务状态会变化；请在 Mac 上实际检查，不要据此假定服务仍停止或已经运行。
 
 ## 执行步骤
